@@ -1,0 +1,62 @@
+{% load static %}
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="googlebot" content="noindex">
+    <meta name="google-site-verification" content="6phv-nCpiGh7DgsQ0lPLVRLi7M7TsRP51ikjBoa4Cck" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{% block meta_description %}Hier steht die Meta-Description{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}Für, diese, Keywords, möchte, ich, ranken{% endblock %}">
+
+
+    <title>{% block title %} Base Html | FFHS {% endblock %}</title>
+
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- FontAwesome CSS -->
+     <script src="https://kit.fontawesome.com/a7ed36fd84.js" crossorigin="anonymous"></script>
+        
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/images/apple-touch-icon.png' %}/">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/images/site.webmanifest' %}">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/about.css' %}">
+
+    <!-- Blog CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/blog.css' %}">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/responsive.css' %}">
+
+  </head>
+  <body>
+
+ <!--Navbar -->
+{% include 'navbar.html' %}
+
+<!--SENDMAIL Start--> {% if messages %}
+
+{% for message in messages %}
+{{ message }}
+{% endfor %}
+            {% endif %}
+    <!--SENDMAIL End-->
+
+{% block content %}
+
+{% endblock %}
+
+<!--Footer -->
+{% include 'footer.html' %}

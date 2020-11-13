@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Digital Business Studium | Fernfachhochschule {% endblock %}
+{% block meta_description %}Das ist die Meta Beschreibung SEO optimiert.{% endblock %}
+{% block keywords %}Online Kennzahlen, Kundengewinnung, Online Marketing {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+<div id="home">
+			<h1>Digitale Geschäftsmodelle entwickeln?</h1>
+			<p>Der digitale Wandel ist allgegenwärtig: Digitale Transformation und disruptive Geschäftsmodelle, Künstliche Intelligenz, Internet der Dinge, Social Media und digital Leadership. Digitalisierung beeinflusst und verändert die Wirtschaft und ist aus der betriebswirtschaftlichen Praxis nicht mehr wegzudenken.</p><br>
+</div>
+</div>
+
+<div class="container">
+<div class="videocontainer">
+		 <!--Video -->
+        <div class="embed-responsive embed-responsive-16by9 video">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-mZxhfxqTS0?autoplay=1&mute=1" allowfullscreen allow="autoplay"></iframe>
+        </div>
+
+        <h2>Ein Studium, dass seiner Zeit voraus ist</h2>
+        <p>Wählen Sie wie viele erfolgreiche Wirtschaftsfachleute vor Ihnen BSc Betriebsökonomie Digital Business an der FFHS, ein international anerkannter Titel. Dieses Bachelorstudium behandelt Schlüsseltechnologien wie Blockchain und Künstliche Intelligenz. Die Kombination zwischen Betriebsökonomie und Technologie öffnet Ihnen Tür und Tore für eine attraktive Anstellung oder zur Startup-Gründung.</p>
+</div>
+		
+		<div class="kreisflex">
+		<div class="kreisflex-item" id="kreis"><p>Interesse?
+        <i class="fas fa-arrow-circle-right"></i></p>
+    	</div>
+        <!--Flexitem End--> 
+        <!--LEAD FORM Start-->
+         <div class="kreisflex-item" id="leadform">
+         <h3>Weitere Informationen per E-Mail erhalten!</h3><br>
+         <form method="POST" action="{% url 'index' %}">
+         {% csrf_token %}               
+          
+         <div class="row">
+	        <div class="col-md-6">
+			         <div class="form-group">
+			            <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail" required="required" data-error="Bitte geben Sie eine gültige E-Mail ein.">
+			            <div class="help-block with-errors"></div>
+			         </div>
+	     	</div>
+            <div class="col-md-6">
+                    <div class="form-group">
+            	          <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name muss ausgefüllt werden.">
+                	     <div class="help-block with-errors"></div>
+                    </div>
+           	</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+            	<div class="form-group">
+          	           <input type="submit" class="btn btn-md btn-send" value="Jetzt absenden">
+                </div>
+            </div>
+          </div>
+          </form>
+        <!--LEAD FORM End--> 
+    	</div><!--Flexitem End--> 
+
+    </div><!--Flexcontainer End--> 
+ </div> <!--Container End-->       
+
+<div class="container">
+	<div class="flex" id="hochschule">
+		<div class="flex-item">
+			<img class="logo img-responsive" src="{% static 'images/logo_ffhs.png' %}">
+		</div>
+
+		<div class="flex-item">
+			<h3>Gesamtschweizerisch anerkannte Fachhochschule</h3>
+			<h3>80% Selbst- bzw. Online-Studium und 20% Präsenzunterricht</h3>
+			<h3>2400 Studierende</h3>
+			<h3>20 Jahre Erfahrung</h3>
+			<h3>Zürich, Bern, Basel oder Brig</h3>
+		</div>
+	</div>
+
+	<p>Eckdaten
+Akadem. Titel: Bachelor of Science SUPSI in Business Administration
+
+Start: August
+
+Dauer: 9 Semester
+
+Studienorte: Bern, Zürich, Brig, Basel, virtuell
+
+Studienmodell: Blended Learning
+
+ECTS: 180
+
+Anmeldeschluss: 31. Mai (mit Studienplatzgarantie)
+
+Kosten: CHF 16'350</p>
+</div>
+		
+<div class="container-fluid">
+		<div id="home1">
+		<h1>Die Digitale Ausrichtung dieses Bachelorstudiums verschafft Ihnen Wettbewerbsvorteile auf dem Arbeitsmarkt</h1>
+		<p>Studieren Sie BSc Betriebsökonomie mit digitaler Ausrichtung.</p>
+		</div>
+</div>
+<div class="container">
+		<!--CONTACT FORM Start--> 
+        <form method="POST" action="{% url 'index' %}">
+              {% csrf_token %}               
+
+              <div class="row">
+                 <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Vorname" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                     </div>
+                  </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Nachname" required="required" data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+                 </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                             <input id="form_url" type="text" name="url" class="form-control" placeholder="Webseiten URL (z.B. www.sh-digital.ch)">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Bemerkungen (Branche, Produke, usw.)" required data-error="Bitte eine Eingabe vornehmen"></textarea>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <input type="submit" class="btn btn-warning btn-lg btn-send" value="Jetzt online anmelden">
+                          </div>
+                        </div>               
+        </form>  
+        <!--CONTACT FORM End-->       
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!-- Navbar -->
+<header>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" role="naviation">
+
+  <a class="navbar-brand" href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo-ffhs-wuerfel.png' %}"></a>
+                
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">    
+      <span class="navbar-toggler-icon"></span>
+      </button>     
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Bachelor of Science</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#hochschule">Fachhochschule</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Digital Business <sup><span class="badge badge-danger">new</span></sup></a></li>
+          </ul>
+          </div>
+</nav>
+</div>
+</header>
+    
+    <!-- Navbar END -->
