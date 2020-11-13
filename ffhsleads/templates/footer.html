@@ -1,36 +1,16 @@
 {% load static %}
+<div class="container">
+<footer class="footer-flex">
+	<div class="footer-flex-item">
+	{% include 'social-icons.html' %}
+	</div>
 
-<footer class="container">
-	<div class="row">
-		
-		<div class="box">
-		
-		<p>FFHS Digital Business ©  <script>document.write(new Date().getFullYear())</script></p>
-		</div>
-		<div class="box">
-			<h4>Studium</h4>
-		<ul class="nav flex-column">
-			
-				<li class="nav-item">
-			<a class="nav-link" href="{% url 'index' %}#ueberuns">Aufbau</a></li>
-		<li class="nav-item">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Vertiefungen</a></li>
-			<a class="nav-link" href="#">Passarelle</a></li>
-		<li class="nav-item">
-				<a class="nav-link" href="#">Studienmodell</a></li>
-		</ul>
-		
-		</div>
-
-		<div class="box">
-		<!--Social Icons -->
-          {% include 'social-icons.html' %}
-		</div>
-
+	<div class="footer-flex-item">
+	<p>Fernfachhochschule Schweiz ©<script>document.write(new Date().getFullYear())</script></p>
 	</div>
 
 </footer>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -38,6 +18,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>	
+
+	<!-- Reviews -->
+	<script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=6019c18b62403111b66e" type="text/javascript"></script>
 	
   </body>
 </html>

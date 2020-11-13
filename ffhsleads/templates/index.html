@@ -22,15 +22,64 @@
 
         <h2>Ein Studium, dass seiner Zeit voraus ist</h2>
         <p>Wählen Sie wie viele erfolgreiche Wirtschaftsfachleute vor Ihnen BSc Betriebsökonomie Digital Business an der FFHS, ein international anerkannter Titel. Dieses Bachelorstudium behandelt Schlüsseltechnologien wie Blockchain und Künstliche Intelligenz. Die Kombination zwischen Betriebsökonomie und Technologie öffnet Ihnen Tür und Tore für eine attraktive Anstellung oder zur Startup-Gründung.</p>
+        <div id="aufeinenblick">
+        <table class="table table-hover">
+          <thead>
+            <h2>Auf einen Blick</h2>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Abschluss</th>
+              <td>Bachelor of Science in Digital Business (SUPSI in Betriebsökonomie)</td>
+            </tr>
+            <tr>
+              <th scope="row">Beginn</th>
+              <td>Erstmals Herbst 2021</td>
+            </tr>
+            <tr>
+              <th scope="row">Dauer</th>
+              <td>9 Semester</td>
+            </tr>
+            <tr>
+              <th scope="row">Standorte</th>
+              <td>Zürich, Bern, Basel und Brig</td>
+            </tr>
+            <tr>
+              <th scope="row">Studienmodell</th>
+              <td>Die Vertiefungsrichtung wird in drei Studienmodellen angeboten<br>
+              1. Vor Ort (Standorte Zürich City und Bern City)<br>
+              2. Online<br>
+              3. Hybrid (Wahlweise vor Ort- und Onlineunterricht)</td>
+            </tr>
+            <tr>
+              <th scope="row">ECTS</th>
+              <td>180 ECTS-Credits (1 ECTS entspricht ca. 30 Stunden Aufwand für das Studium)</td>
+            </tr>
+            <tr>
+              <th scope="row">Anmeldeschluss</th>
+              <td>31. Mai 2021 (Stand: {{ today }} noch 6 Plätze verfügbar). <b>Diese Seite schauen aktuell {{ zufall }} potentielle Studenten an ({{ now }}).</b></td>
+            </tr>
+            <tr>
+              <th scope="row">Kosten</th>
+              <td>CHF 1'817 pro Semester</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Weiterführende Studiengänge</th>
+              <td>MSc Business Administration in Innovation Management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 </div>
 		
-		<div class="kreisflex">
-		<div class="kreisflex-item" id="kreis"><p>Interesse?
+		<div class="interesseflex">
+		<div class="interesseflex-item" id="interesse"><p>Interesse?
         <i class="fas fa-arrow-circle-right"></i></p>
     	</div>
         <!--Flexitem End--> 
         <!--LEAD FORM Start-->
-         <div class="kreisflex-item" id="leadform">
+         <div class="interesseflex-item" id="leadform">
          <h3>Weitere Informationen per E-Mail erhalten!</h3><br>
          <form method="POST" action="{% url 'index' %}">
          {% csrf_token %}               
@@ -60,52 +109,42 @@
           </form>
         <!--LEAD FORM End--> 
     	</div><!--Flexitem End--> 
-
     </div><!--Flexcontainer End--> 
- </div> <!--Container End-->       
-
-<div class="container">
-	<div class="flex" id="hochschule">
+  
+  <div class="hochschule-ueberblick flex" id="hochschule">
+  <div class="flex-item-hochschule">
+  <h2>Die FFHS im Überblick</h2>
+  <p>Die Fernfachhochschule Schweiz (FFHS) bietet als eidgenössisch anerkannte Fachhochschule seit 1998 berufsbegleitende Bachelor- und Master-Studiengänge sowie Weiterbildungen an. Mit über 20 Jahren Erfahrung im Distance Learning ist sie die führende E-Hochschule der Schweiz und eine Alternative für Studierende, die Berufstätigkeit, Familie und Studium kombinieren möchten.</p>
+  <p>Die FFHS betreibt vier Standorte in Zürich, Basel, Bern und Brig und beschäftigt 110 Mitarbeitende sowie über 400 Dozierende, die das fachliche Wissen praxisorientiert an die rund 2'400 Studierenden (Stand 2019) vermitteln. In ihren vier Forschungsinstituten betreibt die FFHS gemäss Leistungsauftrag des Bundes anwendungsorientierte Forschung in den Bereichen Web Science, Management & Innovation, Gesundheit sowie E-Learning.</p>
+</div>
+</div>
+	<div class="flex boxen" >
 		<div class="flex-item">
 			<img class="logo img-responsive" src="{% static 'images/logo_ffhs.png' %}">
 		</div>
 
 		<div class="flex-item">
-			<h3>Gesamtschweizerisch anerkannte Fachhochschule</h3>
-			<h3>80% Selbst- bzw. Online-Studium und 20% Präsenzunterricht</h3>
-			<h3>2400 Studierende</h3>
-			<h3>20 Jahre Erfahrung</h3>
-			<h3>Zürich, Bern, Basel oder Brig</h3>
+			<p>Gesamtschweizerisch anerkannte Fachhochschule</p>
+			<p>80% Selbst- bzw. Online-Studium und 20% Präsenzunterricht</p>
+			<p>2400 Studierende</p>
+			<p>20 Jahre Erfahrung</p>
+			<p>Zürich, Bern, Basel oder Brig</p>
 		</div>
-	</div>
+	</div><!--Flex End--> 
 
-	<p>Eckdaten
-Akadem. Titel: Bachelor of Science SUPSI in Business Administration
-
-Start: August
-
-Dauer: 9 Semester
-
-Studienorte: Bern, Zürich, Brig, Basel, virtuell
-
-Studienmodell: Blended Learning
-
-ECTS: 180
-
-Anmeldeschluss: 31. Mai (mit Studienplatzgarantie)
-
-Kosten: CHF 16'350</p>
-</div>
+  <div class="bewertungen" data-romw-token="nh68yFvuIkwydxkXtZbDztVOdutlRhyDhqvvHKTcLhDeelyUhg"></div>
+  
+</div> <!--Container End--> 
 		
 <div class="container-fluid">
 		<div id="home1">
-		<h1>Die Digitale Ausrichtung dieses Bachelorstudiums verschafft Ihnen Wettbewerbsvorteile auf dem Arbeitsmarkt</h1>
-		<p>Studieren Sie BSc Betriebsökonomie mit digitaler Ausrichtung.</p>
-		</div>
-</div>
-<div class="container">
-		<!--CONTACT FORM Start--> 
-        <form method="POST" action="{% url 'index' %}">
+		<h1>Digital Business: Sichern Sie sich Vorteile auf dem Arbeitsmarkt gegenüber anderen BSc Absolventen</h1>
+		<p>Studieren Sie BSc Betriebsökonomie mit digitaler Ausrichtung. Die Absolventen der Vertiefung Digital Business werden zu ausgewiesenen und gesuchten digitalen Experten ausgebildet, die eine führende Position innerhalb der digitale Transformation einnehmen wollen. Sie übernehmen eine verantwortungsvolle Management-, Leadership-, Beratungs- oder Projektfunktion, in der Sie digitale Projekte und Innovationen erfolgreich entwickeln und umsetzen können. Erwerben Sie eine breite Basis oder spezialisieren Sie sich: Mit dem BSc Betriebskökonomie in Digital Business legen Sie den Grundstein für Ihre Karriere. <b>Neu: Studieren Sie in der virtuellen Klasse!</b> </p>
+    <h3>Direkt anmelden und Studienplatz sichern!</h3>
+    <p>Nachfolgend melden Sie sich online für einen Studienplatz an. Sie werden von uns kontaktiert und persönlich durch den Anmelde-, Zulassungs- und Immatrikulationsprozess begleitet.</p>
+    
+     <!--CONTACT FORM Start--> 
+        <form id="form-anmeldung" method="POST" action="{% url 'index' %}">
               {% csrf_token %}               
 
               <div class="row">
@@ -131,7 +170,7 @@ Kosten: CHF 16'350</p>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                             <input id="form_url" type="text" name="url" class="form-control" placeholder="Webseiten URL (z.B. www.sh-digital.ch)">
+                             <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Telefon">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
@@ -140,7 +179,7 @@ Kosten: CHF 16'350</p>
                         <div class="row">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Bemerkungen (Branche, Produke, usw.)" required data-error="Bitte eine Eingabe vornehmen"></textarea>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Bemerkungen" required data-error="Bitte eine Eingabe vornehmen"></textarea>
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
@@ -149,8 +188,10 @@ Kosten: CHF 16'350</p>
                           </div>
                         </div>               
         </form>  
-        <!--CONTACT FORM End-->       
-</div>
+        <!--CONTACT FORM End-->     
+      
+		</div><!--Div home End-->  
+</div><!--Container End-->  
 
 {% endblock %}
 

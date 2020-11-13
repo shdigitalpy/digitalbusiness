@@ -8,7 +8,7 @@
 	--grey: #f6f6f6;
 	--lightgrey: #aaa;
 	--darkergrey: #A0A0A0;
-	--black: black;
+	--black: #000000;
 	--red: #D50006;
 }
 
@@ -16,11 +16,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
-}
-
-p {
-	margin: 0 !important;
-	padding: 0 !important;
 }
 
 h1 {
@@ -43,13 +38,10 @@ h5 {
 	font-weight: 500 !important;
 }
 
-.padding {
-	padding: 5% 0;
-}
 
 /* ----------------------------------- Navigation */
 .navbar {
-	height: 5rem;
+	height: 7rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -91,7 +83,7 @@ h5 {
 
 #home h1, h2, p {
 	width: 40% !important;
-	margin: 1% auto !important;
+	margin: 2% auto !important;
 	padding: 0 !important;
 }
 
@@ -103,7 +95,7 @@ h5 {
 
 .videocontainer {
 	width: 70%;
-	margin: 0% auto;
+	margin: 0 auto;
 }
 
 .video {
@@ -134,14 +126,14 @@ h5 {
 /* ----------------------------------- Call to Action */
 
 
-.kreisflex {
+.interesseflex {
 	display: flex;
 	align-content: stretch;
-	margin: 5% 0 !important;
+	margin: 6% 0 !important;
 }
 
 
-.kreisflex-item {
+.interesseflex-item {
 	flex: 0 0 49%;
 	padding: 4% 5%; 
 	margin: 0 2%;
@@ -149,13 +141,14 @@ h5 {
     color: var(--white);
 }
 
-#kreis {
+#interesse {
 	display: table-cell;
     vertical-align: middle;
     opacity: 0.7;
+
 }
 
-#kreis p {
+#interesse p {
 	font-size: 3rem !important;
 	font-weight: 900 !important;
 
@@ -163,6 +156,7 @@ h5 {
 
 #leadform {
 	opacity: 0.7;
+
 }
 
 #leadform:hover {
@@ -179,16 +173,29 @@ h5 {
 }
 
 /* ----------------------------------- Boxen Zahlen */
-
-#hochschule {
-	margin: 15% 0 !important;
-}
-
 .flex {
 	display: flex;
-	align-content: stretch;
+	/*align-content: stretch;*/
 }
 
+.hochschule-ueberblick h2 {
+	width: 100% !important;
+}
+
+.hochschule-ueberblick p {
+	width: 100% !important;
+}
+
+.flex-item-hochschule {
+	flex: 0 0 100%;
+	margin: 2% auto 0 auto !important;
+	padding: 4% 5%;
+}
+
+.boxen {
+	margin: 0 0 5% 0 !important;
+
+}
 
 .flex-item {
 	flex: 0 0 50%;
@@ -199,6 +206,11 @@ h5 {
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	
+}
+
+.flex-item p {
+	width: 100% !important;
 }
 
 .flex-item h3 {
@@ -207,6 +219,10 @@ h5 {
 }
 
 
+.bewertungen {
+	margin: 0 2% !important;
+}
+
 /* ----------------------------------- Dritter Abschnitt */
 
 #home1 {
@@ -214,192 +230,42 @@ h5 {
 	background-color: var(--grey);
 }
 
-#home1 h1, p {
-	width: 40%;
-	margin: 1% auto;
+#home1 h1 {
+	font-size: 1.8rem !important;
+}
+
+#home1 h1, h3, p {
+	width: 40% !important;
+	margin: 1% auto !important;
 	padding: 0 !important;
 }
 
-
-
-
-#contact-form {
-	width: 100% !important;
-	background-color: var(--blue);
-	height: 1050px;
-}
-
-.formcontainer {
-	padding: 3.5% 0;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-.controls {
-	background-color: var(--darkergrey);
-	width: 75%;
-}
-
-
-.reviews {
-	padding: 4%;
-}
-
-
-/* ----------------------------------- Kundengewinnung */
-
-#kundengewinn {
-	position: relative;
-	z-index: 5;
-}
-
-#kundengewinn p {
-	font-size: 1.4rem !important;
-}
-
-#kundengewinn img {
-	max-width: 100%;
-	height: auto;
-}
-
-#digitalbox {
-	background: var(--white);
-	padding: 3%; 
-	border: 20px solid var(--grey);
-	border-radius: 40px;
-	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-}
-
-.bluetext h2 {
-	color: var(--blue);
-}
-
-.bluetext h3, h4, h5 {
-	color: var(--blue);
-}
-
-.bluetext ul li {
-	color: var(--blue);
-}
-
-
-/* ----------------------------------- Chefsache / Bereit mit uns zu arbeiten */
-
-.chefsache {
-	position: relative;
-	overflow: visible;
-	z-index: 5;
-	margin-bottom: 7vw;
-}
-
-.foto-container {
-	margin-bottom: 3%;
-}
-
-.foto {
-	max-width: 100%;
-	height: auto;
-	margin: -2vw 0 0 0;
-	border-radius: 20px;
-	-webkit-box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-	-moz-box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-	box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-}
-
-.modal-header {
-	padding: 3% !important;
-	background-color: var(--blue);
-}
-
-.modal-header h5 {
-	color: var(--yellow) !important;
-}
-
-
-.modal-body ul li {
-	list-style-type: none;
-	margin-left: -2%;
-	font-size: 1.1rem !important;
-}
-
-/* ----------------------------------- Blog Preview */
-
-.card {
-	width: 100%;
-	height: 100%;
-	-webkit-box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-	-moz-box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-	box-shadow: -4px 7px 43px -3px rgba(0,0,0,0.74);
-}
-
-.card-text {
-	font-size: 1.1rem !important;
-}
-
-
-.gradient {
-	background-color: rgba(35,65,92,0.2);
-	background-image:
-	linear-gradient(45deg, 
-		#ffffff 33%, 
-		transparent 33%, 
-		transparent 66%, 
-		#ffffff 66%),
-
-	linear-gradient(135deg, 
-		#ffffff 33%, 
-		transparent 33%, 
-		transparent 66%, 
-		#ffffff 66%)
-	;
-	background-size: 2.5rem 2.5rem;
-}
-
-.blogh2 {
-	background-color: var(--blue);
-	color: var(--white) !important;
-	text-align: center;
-	padding: 1%;
+#form-anmeldung {
+	width: 40% !important;
+	margin: 1% auto !important;
+	padding: 0 !important;
 }
 
 
 /* ----------------------------------- Footer */
 
+.footer-flex {
+	display: flex;
+
+}
+
+.footer-flex-item {
+	flex: 0 0 25%;
+	margin: 2% auto 0 auto !important;
+}
+
 footer {
 	margin: 3% 0;
-	background-color: var(--white);
-	color: var(--black) !important;
+
 }
 
-footer p, ul li {
-	color: var(--black) !important;
-	padding: 0 !important;
-	margin: 0 !important;
-}
-
-
-footer h4 {
-	color: var(--black) !important;
-	text-decoration: underline;
-}
-
-footer .box {
-	width: 30% !important;
-	padding: 2%;
-}
-
-
-footer .nav a {
-	font-size: 1.1rem !important;
-	margin: 0 !important;
-	padding: 0.4rem 0 !important;
-}
-
-footer .nav a:hover {
-	text-decoration: underline;
+footer p {
+	width: 100% !important;
 }
 
 /* ----------------------------------- Social Icons */
@@ -409,8 +275,8 @@ footer .nav a:hover {
 }
 
 .social a {
-	font-size: 2rem;
-	margin: 10% 10% 0 0;
+	font-size: 1.7rem;
+	margin: 7% 7% 0 0;
 }
 
 .fa-facebook:hover {
@@ -433,11 +299,16 @@ footer .nav a:hover {
 	color: #bb0000;
 }
 
+.fa-instagram:hover {
+	color: #C13584;
+}
+
 .fa-facebook,
 .fa-google,
 .fa-twitter,
 .fa-linkedin,
-.fa-youtube {
+.fa-youtube, 
+.fa-instagram {
 	color: #d5d5d5;
 
 }
