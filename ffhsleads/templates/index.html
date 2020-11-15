@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Digital Business Studium | Fernfachhochschule {% endblock %}
-{% block meta_description %}Das ist die Meta Beschreibung SEO optimiert.{% endblock %}
-{% block keywords %}Online Kennzahlen, Kundengewinnung, Online Marketing {% endblock %}
+{% block title %}Bachelor of Science SUPSI in Betriebsökonomie mit Vertiefung in Digital Business | Fernfachhochschule {% endblock %}
+{% block meta_description %}Das Studium BSc Betriebsökonomie mit Vertiefung Digital Business befähigt Sie, digitale Transformation zu verstehen, digitale Geschäftsmodelle zu entwickeln und neue Technologien richtig einzusetzen.{% endblock %}
+{% block keywords %}Bachelor of Science in Betriebsökonomie{% endblock %}
 
 {% block content %}
 
 <div class="container-fluid">
 <div id="home">
-			<h1>Digitale Geschäftsmodelle entwickeln?</h1>
-			<p>Der digitale Wandel ist allgegenwärtig: Digitale Transformation und disruptive Geschäftsmodelle, Künstliche Intelligenz, Internet der Dinge, Social Media und digital Leadership. Digitalisierung beeinflusst und verändert die Wirtschaft und ist aus der betriebswirtschaftlichen Praxis nicht mehr wegzudenken.</p><br>
+			<h1>International anerkanntes Studium mit Vertiefung Digital Business</h1>
+			<p>Der digitale Wandel ist allgegenwärtig: Digitale Transformation und disruptive Geschäftsmodelle, Künstliche Intelligenz, Internet der Dinge, Social Media und digital Leadership. Digitalisierung beeinflusst und verändert die Wirtschaft und ist aus der betriebswirtschaftlichen Praxis nicht mehr wegzudenken.</p>
 </div>
 </div>
 
@@ -118,7 +118,7 @@
   <p>Die FFHS betreibt vier Standorte in Zürich, Basel, Bern und Brig und beschäftigt 110 Mitarbeitende sowie über 400 Dozierende, die das fachliche Wissen praxisorientiert an die rund 2'400 Studierenden (Stand 2019) vermitteln. In ihren vier Forschungsinstituten betreibt die FFHS gemäss Leistungsauftrag des Bundes anwendungsorientierte Forschung in den Bereichen Web Science, Management & Innovation, Gesundheit sowie E-Learning.</p>
 </div>
 </div>
-	<div class="flex boxen" >
+	<div class="flex boxen">
 		<div class="flex-item">
 			<img class="logo img-responsive" src="{% static 'images/logo_ffhs.png' %}">
 		</div>
@@ -136,15 +136,26 @@
   
 </div> <!--Container End--> 
 		
-<div class="container-fluid">
-		<div id="home1">
-		<h1>Digital Business: Sichern Sie sich Vorteile auf dem Arbeitsmarkt gegenüber anderen BSc Absolventen</h1>
-		<p>Studieren Sie BSc Betriebsökonomie mit digitaler Ausrichtung. Die Absolventen der Vertiefung Digital Business werden zu ausgewiesenen und gesuchten digitalen Experten ausgebildet, die eine führende Position innerhalb der digitale Transformation einnehmen wollen. Sie übernehmen eine verantwortungsvolle Management-, Leadership-, Beratungs- oder Projektfunktion, in der Sie digitale Projekte und Innovationen erfolgreich entwickeln und umsetzen können. Erwerben Sie eine breite Basis oder spezialisieren Sie sich: Mit dem BSc Betriebskökonomie in Digital Business legen Sie den Grundstein für Ihre Karriere. <b>Neu: Studieren Sie in der virtuellen Klasse!</b> </p>
-    <h3>Direkt anmelden und Studienplatz sichern!</h3>
+<div class="container home1 flex" id="home1">
+		
+		<div class="home1-flex-item">
+    <h1>Digital Business: Sichern Sie sich Vorteile gegenüber anderen BSc Absolventen</h1>
+		<p>Studieren Sie BSc Betriebsökonomie mit digitaler Ausrichtung. Die Absolventen der Vertiefung Digital Business werden zu ausgewiesenen und gesuchten digitalen Experten ausgebildet, die eine führende Position innerhalb der digitale Transformation einnehmen wollen. Sie übernehmen eine verantwortungsvolle Management-, Leadership-, Beratungs- oder Projektfunktion, in der Sie digitale Projekte und Innovationen erfolgreich entwickeln und umsetzen können. Erwerben Sie eine breite Basis oder spezialisieren Sie sich: Mit dem BSc Betriebskökonomie in Digital Business legen Sie den Grundstein für Ihre Karriere. <b>Neu: Studieren Sie in der virtuellen Klasse!</b></p>
+    </div>
+    <div class="home1-flex-item-img">
+    <img class="img-responsive" src="{% static '/images/digital-business-studierende.jpg' %}">
+    </div>
+     
+    </div><!--Container End-->  
+
+    <div class="contact flex">
+      <div class="flex-item">
+    <h2>Heute noch anmelden und Studienplatz sichern!</h2>
     <p>Nachfolgend melden Sie sich online für einen Studienplatz an. Sie werden von uns kontaktiert und persönlich durch den Anmelde-, Zulassungs- und Immatrikulationsprozess begleitet.</p>
     
      <!--CONTACT FORM Start--> 
-        <form id="form-anmeldung" method="POST" action="{% url 'index' %}">
+     
+        <form method="POST" action="{% url 'index' %}">
               {% csrf_token %}               
 
               <div class="row">
@@ -187,11 +198,12 @@
                             <input type="submit" class="btn btn-warning btn-lg btn-send" value="Jetzt online anmelden">
                           </div>
                         </div>               
-        </form>  
+        </form> 
+      </div>
         <!--CONTACT FORM End-->     
-      
-		</div><!--Div home End-->  
-</div><!--Container End-->  
+    </div><!--Div contact End-->  
+		
+
 
 {% endblock %}
 

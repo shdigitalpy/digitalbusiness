@@ -19,29 +19,38 @@ html, body {
 }
 
 h1 {
-	font-size: 2.7rem !important;
+	font-size: 2.5rem;
 	font-weight: 900;
 }
 
 h2 {
-	font-size: 1.7rem !important;
+	font-size: 1.7rem;
 	font-weight: 800;
 }
 
 h3, h4 {
-	font-size: 1.4rem !important;
+	font-size: 1.4rem;
 	font-weight: 700;
 }
 
 h5 {
-	font-size: 1.2rem !important;
-	font-weight: 500 !important;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
+p {
+	font-size: 1.3rem;
+} 
+
+th, td {
+	font-size: 1.2rem;
+	padding: 2% 0 !important;
+}
 
 /* ----------------------------------- Navigation */
+
 .navbar {
-	height: 7rem;
+	min-height: 5rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -68,27 +77,23 @@ h5 {
 /* ----------------------------------- Home and Titel */
 
 #home {
-	height: 50rem;
-	padding: 3% 0 7% 0 !important;
+	height: 50%;
+	padding: 3% 0 8% 0;
 	background-color: var(--grey);
 	margin-bottom: -10vw;
-	height: 100%;
 	overflow: visible;
 	z-index: 5;
 }
 
-#home h1 {
-	font-size: 2.5rem !important;
-}
 
-#home h1, h2, p {
-	width: 40% !important;
-	margin: 2% auto !important;
-	padding: 0 !important;
+#home h1, h2 {
+	width: 40%;
+	margin: 2% auto;
 }
 
 #home p {
-	padding-bottom: 3% !important;
+	width: 40% !important; 
+	margin: 2% auto !important;
 }
 
 /* ----------------------------------- Video */
@@ -110,13 +115,11 @@ h5 {
 .videocontainer h2 {
 	width: 100% !important;
 	margin: 10% 0 1% 0 !important;
-	font-size: 1.4rem !important;
 }
 
 .videocontainer p {
 	width: 100% !important;
 	margin: 0 0 5% 0 !important;
-	font-size: 1.2rem !important;
 }
 
 .videocontainer button {
@@ -149,9 +152,9 @@ h5 {
 }
 
 #interesse p {
+	width: 100% !important;
 	font-size: 3rem !important;
 	font-weight: 900 !important;
-
 }
 
 #leadform {
@@ -172,10 +175,13 @@ h5 {
 	background-color: var(--yellow) !important;
 }
 
+#leadform h3 {
+	width: 100% !important;
+}
+
 /* ----------------------------------- Boxen Zahlen */
 .flex {
 	display: flex;
-	/*align-content: stretch;*/
 }
 
 .hochschule-ueberblick h2 {
@@ -189,7 +195,7 @@ h5 {
 .flex-item-hochschule {
 	flex: 0 0 100%;
 	margin: 2% auto 0 auto !important;
-	padding: 4% 5%;
+	padding: 0 5% 4% 5% !important;
 }
 
 .boxen {
@@ -225,92 +231,126 @@ h5 {
 
 /* ----------------------------------- Dritter Abschnitt */
 
-#home1 {
-	padding: 5% 0 !important;
-	background-color: var(--grey);
+.home1 {
+	padding: 5% 0 2% 0 !important;
+
 }
 
-#home1 h1 {
+.home1-flex-item {
+	flex: 0 0 60%;
+	background: var(--white);
+	margin: 0 2%;
+}
+
+.home1-flex-item-img {
+	flex: 0 0 40%;
+	border: 0.25rem solid var(--grey);
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+}
+
+.home1 h1 {
 	font-size: 1.8rem !important;
+	padding: 0 5%;
+	width: 100% !important;
 }
 
-#home1 h1, h3, p {
-	width: 40% !important;
-	margin: 1% auto !important;
+.home1 p {
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	padding: 0 5% 4% 5% !important;
+}
+
+.home1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.contact .flex-item {
+	flex: 0 0 50%;
+	margin: 0 auto;
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.contact {
+	padding: 5% 0;
+	background-color: var(--grey);
+	background-image:
+	linear-gradient(45deg, 
+		#ffffff 33%, 
+		transparent 33%, 
+		transparent 66%, 
+		#ffffff 66%),
+
+	linear-gradient(135deg, 
+		#ffffff 33%, 
+		transparent 33%, 
+		transparent 66%, 
+		#ffffff 66%)
+	;
+	background-size: 1rem 1rem;
+
+}
+
+.contact h2 {
+	width: 100% !important;
+	margin: 0 !important;
 	padding: 0 !important;
 }
 
-#form-anmeldung {
-	width: 40% !important;
-	margin: 1% auto !important;
-	padding: 0 !important;
+.contact p {
+	margin: 0 !important;
+	padding: 2% 0 !important;
 }
-
 
 /* ----------------------------------- Footer */
 
 .footer-flex {
 	display: flex;
-
+	justify-content: center;
 }
 
 .footer-flex-item {
-	flex: 0 0 25%;
-	margin: 2% auto 0 auto !important;
+	flex: 0 0 40%;
 }
 
 footer {
-	margin: 3% 0;
+	padding: 3% 0;
 
-}
-
-footer p {
-	width: 100% !important;
 }
 
 /* ----------------------------------- Social Icons */
 
-.social {
-	margin: 5% 0 0 0;
-}
-
 .social a {
 	font-size: 1.7rem;
-	margin: 7% 7% 0 0;
+	margin: 0 3% 0 0;
 }
 
-.fa-facebook:hover {
+.fa-facebook {
 	color: #3b5998;
 }
 
-.fa-google:hover {
+.fa-google {
 	color: #4285f4;
 }
 
-.fa-twitter:hover {
+.fa-twitter {
 	color: #00aced;
 }
 
-.fa-linkedin:hover {
+.fa-linkedin {
 	color: #007bb5;
 }
 
-.fa-youtube:hover {
+.fa-youtube {
 	color: #bb0000;
 }
 
-.fa-instagram:hover {
-	color: #C13584;
-}
-
-.fa-facebook,
-.fa-google,
-.fa-twitter,
-.fa-linkedin,
-.fa-youtube, 
 .fa-instagram {
-	color: #d5d5d5;
-
+	color: #C13584;
 }
 
 /* ----------------------------------- Social Icons END */
