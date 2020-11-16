@@ -111,11 +111,22 @@ td {
 .video {
 	margin: 5% 0;
 	border: 5px solid var(--white);
+	display: inline-block;
 	border-radius: 35px;
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 }
+
+.video img {
+	border: 5px solid var(--white);
+	border-radius: 35px;
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+}
+
+
 
 .videocontainer h2 {
 	width: 100% !important;
