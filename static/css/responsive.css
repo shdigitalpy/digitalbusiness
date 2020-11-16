@@ -4,22 +4,105 @@
 
 /* ----------------------------------- Tablet Main CSS elements */
 
+	#home {
+		padding: 3% 3% 8% 3%;
+	}
+
+	#home h1, h2 {
+		width: 100% !important;
+}
+
+
+	#home p {
+		width: 100% !important;		
+}
+
+	.videocontainer {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.interesseflex {
+		flex-wrap: wrap;
+		margin: 6% 0 !important;
+}
+
+	.interesseflex-item {
+		flex: 0 0 100%;
+		padding: 4% 5%; 
+		margin: 0;
+		background-color: var(--red);
+	    color: var(--white);
+	}
+
+	.flex-item-hochschule {
+		flex: 0 0 100%;
+		margin: 2% 0 !important;
+}
+
+	/* ----------------------------------- Kontaktformular */
+	.contact .flex-item {
+		flex: 0 0 95%;
+		margin: 2%;
+
+}
+	/* ----------------------------------- Video Bottom */
+	.belowvideo {
+		width: 95%;
+		margin: 2% !important;
+}
 
 
 /* ----------------------------------- Responsive 992px Tablet small*/
 @media (max-width: 992px){
 	
+	#home h1, h2 {
+		width: 100%;
+}
 
+	#home p {
+		width: 100% !important;
+}
+
+	.videocontainer {
+		width: 100%;
+		margin: 0 auto;
+}
+
+	.interesseflex {
+		flex-wrap: wrap;
+		margin: 6% 0 !important;
+}
+
+	.interesseflex-item {
+		flex: 0 0 100%;
+		padding: 4% 5%; 
+		margin: 0;
+		background-color: var(--red);
+	    color: var(--white);
+	}
+
+	.flex-item-hochschule {
+		flex: 0 0 100%;
+		margin: 2% 0 !important;
+}
+
+	/* ----------------------------------- Kontaktformular */
+	.contact .flex-item {
+		flex: 0 0 100%;
+		margin: 3%;
+
+}
+	/* ----------------------------------- Video Bottom */
+	.belowvideo {
+		width: 100%;
+}
 
 
 
 /* ----------------------------------- Responsive 768px Mobile*/
 @media (max-width: 768px){
 /* ----------------------------------- Mobile Main CSS elements */
-
-	.container {
-		padding: 3%;
-	}
 
 	html, body {
 		left: 0;
@@ -51,26 +134,140 @@
 		font-size: 1.1rem !important;
 	}
 
+	th {
+		font-size: 1rem;
+		padding: 2% !important;
+		margin: 0.2%;
+}
 
-	.social a {
-		font-size: 1.5em;
+	td {
+		margin-left: 1px;
+		font-size: 1rem;
 	}
 
+/* ----------------------------------- Home and Titel */
 
 	#home {
 		background-color: var(--white);
 		
 	}
 
-	#home h1 {
-	font-size: 1.5rem !important;
+	#home h1, h2 {
+		width: 100%;
+		margin: 2% auto;
+		padding: 2% 2% 0 2%;;
 }
 
-	#home h1, h2, p {
-	width: 100% !important;
-	
-}
 
 	#home p {
-		padding-bottom: 0 !important;
+		width: 100% !important; 
+		margin: 2% auto !important;
+		padding: 2% !important;
+}
+
+/* ----------------------------------- Video */
+
+	.videocontainer {
+		width: 100%;
+		margin: 0;
+}
+
+	.videocontainer p {
+		padding: 2% !important;
+}
+
+/* ----------------------------------- Call to Action */
+
+	.interesseflex {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 !important;
+}
+
+
+	.interesseflex-item {
+		flex: 0 0 100%;
+		padding: 2%; 
+		margin: 0;
+		background-color: var(--red);
+	    color: var(--white);
+}
+
+/* ----------------------------------- Hochschule */
+
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+
+	.flex-item-hochschule {
+		flex: 0 0 100%;
+		margin: 2% 0 0 0 !important;
+		padding: 2% !important;
+}
+	.hochschule-ueberblick h2 {
+		padding: 1% 0 !important;
+}
+
+
+/* ----------------------------------- Hochschule Zahlen */
+
+	.flex-item {
+		flex: 0 0 100%;
+		margin: 1% 0;
 	}
+
+/* ----------------------------------- Digital Business */
+
+	.home1-flex-item {
+		flex: 0 0 100%;
+
+	}
+
+	.home1-flex-item-img {
+		flex: 0 0 100%;
+	}
+
+	.home1 h1 {
+		font-size: 1.8rem !important;
+		padding: 2% 2% 0 2%;
+		width: 100% !important;
+}
+
+	.home1 p {
+		width: 100% !important;
+		padding: 2% !important;
+	}
+
+/* ----------------------------------- Kontaktformular */
+	.contact .flex-item {
+		flex: 0 0 90%;
+		margin: 3%;
+
+}
+	/* ----------------------------------- Video Bottom */
+	.belowvideo {
+		width: 90%;
+}
+
+/* ----------------------------------- Footer */
+	.footer-flex-item {
+		flex: 0 0 50%;
+		padding: 2%;
+	}
+
+	footer {
+		padding: 5% 0;
+
+	}
+
+	footer p {
+		font-size: 1rem !important;
+	}
+
+/* ----------------------------------- Social Icons */
+	.social a {
+		font-size: 1.7rem;
+		margin: 0 4% 0 0;
+}

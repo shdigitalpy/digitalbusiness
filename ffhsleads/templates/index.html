@@ -6,6 +6,15 @@
 
 {% block content %}
 
+  <!--SENDMAIL Start--> {% if message_name %}
+  <div class="container-fluid">
+  <div id="home"><p>
+  {{ success_message }} 
+  Zurück zur <a href="{% url 'index' %}">Webseite</a>.</p></div>
+            </div>
+            {% else %}
+    <!--SENDMAIL End-->
+
 <div class="container-fluid">
 <div id="home">
 			<h1>International anerkanntes Studium mit Vertiefung Digital Business</h1>
@@ -87,13 +96,13 @@
          <div class="row">
 	        <div class="col-md-6">
 			         <div class="form-group">
-			            <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail" required="required" data-error="Bitte geben Sie eine gültige E-Mail ein.">
+			            <input id="form_email" type="email" name="message_email" class="form-control" placeholder="E-Mail" required="required" data-error="Bitte geben Sie eine gültige E-Mail ein.">
 			            <div class="help-block with-errors"></div>
 			         </div>
 	     	</div>
             <div class="col-md-6">
                     <div class="form-group">
-            	          <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name muss ausgefüllt werden.">
+            	          <input id="form_name" type="text" name="message_name" class="form-control" placeholder="Name" required="required" data-error="Name muss ausgefüllt werden.">
                 	     <div class="help-block with-errors"></div>
                     </div>
            	</div>
@@ -161,13 +170,13 @@
               <div class="row">
                  <div class="col-md-6">
                     <div class="form-group">
-                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Vorname" required="required" data-error="Firstname is required.">
+                      <input id="form_name" type="text" name="message_name" class="form-control" placeholder="Vorname" required="required" data-error="Firstname is required.">
                       <div class="help-block with-errors"></div>
                      </div>
                   </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Nachname" required="required" data-error="Lastname is required.">
+                      <input id="form_lastname" type="text" name="message_vorname" class="form-control" placeholder="Nachname" required="required" data-error="Lastname is required.">
                       <div class="help-block with-errors"></div>
                   </div>
                  </div>
@@ -175,13 +184,13 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail" required="required" data-error="Valid email is required.">
+                              <input id="form_email" type="email" name="message_email" class="form-control" placeholder="E-Mail" required="required" data-error="Valid email is required.">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                             <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Telefon">
+                             <input id="form_phone" type="text" name="message_telefon" class="form-control" placeholder="Telefon">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
@@ -190,7 +199,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Bemerkungen" required data-error="Bitte eine Eingabe vornehmen"></textarea>
+                              <textarea id="form_message" name="message_bemerkungen" class="form-control" placeholder="Bemerkungen" required data-error="Bitte eine Eingabe vornehmen"></textarea>
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
@@ -199,12 +208,19 @@
                           </div>
                         </div>               
         </form> 
-      </div>
-        <!--CONTACT FORM End-->     
-    </div><!--Div contact End-->  
+        </div><!--CONTACT FORM End-->    
+    </div><!--Div contact End--> 
+   
+
+   <div class="container-fluid video-bottom">
+   <div class="belowvideo">
+    <!--Video -->
+    <div class="embed-responsive embed-responsive-16by9 belowvideo-element"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nyy3PBqc79k?autoplay=1&mute=1" allowfullscreen allow="autoplay"></iframe>
+        </div>
+    </div><!--End Videocontainer -->
+  </div><!--End Fluid Container -->
 		
-
-
+{% endif %}
 {% endblock %}
 
 

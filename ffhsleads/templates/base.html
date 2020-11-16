@@ -46,14 +46,6 @@
  <!--Navbar -->
 {% include 'navbar.html' %}
 
-<!--SENDMAIL Start--> {% if messages %}
-
-{% for message in messages %}
-{{ message }}
-{% endfor %}
-            {% endif %}
-<!--SENDMAIL End-->
-
 {% block content %}
 
 {% endblock %}
