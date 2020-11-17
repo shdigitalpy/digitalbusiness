@@ -112,20 +112,21 @@ td {
 	margin: 5% 0;
 	display: inline-block;
 	border: 5px solid var(--white);
-	border-radius: 35px;
+	-webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -khtml-border-radius: 35px;
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 }
 
 .video iframe {
-	background-color: green;
-	border: 5px solid var(--white);
-	border-radius: 35px;
-	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	vertical-align: middle;
+	-webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -khtml-border-radius: 35px;
+    vertical-align: middle;
 }
 
 
