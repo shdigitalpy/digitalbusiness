@@ -2,10 +2,23 @@
 /* ----------------------------------- Responsive 1024px Tablet*/
 @media (max-width: 1024px){
 
+
 /* ----------------------------------- Tablet Main CSS elements */
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		}
+
+	.navbar-nav {
+ 		width: 100%;
+	}
+
+
 
 	#home {
 		padding: 3% 3% 8% 3%;
+		background-color: var(--white);
 	}
 
 	#home h1, h2 {
@@ -35,6 +48,7 @@
 	    color: var(--white);
 	}
 
+
 /* ----------------------------------- Hochschule */
 
 	.flex {
@@ -49,13 +63,22 @@
 		padding: 2% 0 !important;
 }
 	.hochschule-ueberblick h2 {
-		padding: 1% 0 !important;
+		padding: 1% 0;
 		margin: 0;
 }
 
 	.hochschule-ueberblick p {
 		margin: 0;
 	}
+
+/* ----------------------------------- Hochschule Zahlen */
+
+	.flex-item {
+		flex: 0 0 48%;
+		margin: 0 0.5%;
+		
+	}
+
 /* ----------------------------------- Digital Business */
 
 	.home1 h1 {
@@ -68,6 +91,15 @@
 		padding: 2% 0 !important;
 	}
 
+	.home1-flex-item {
+		flex: 0 0 58%;
+		background: var(--white);
+		margin: 0 2%;
+}
+
+	.home1-flex-item-img {
+		flex: 0 0 38%;
+	}
 
 
 	/* ----------------------------------- Kontaktformular */

@@ -109,7 +109,7 @@ td {
 }
 
 .video {
-	margin: 5% 0;
+	margin: 5% 0 0 0; 
 	display: inline-block;
 	border: 5px solid var(--white);
 	-webkit-border-radius: 35px;
@@ -136,7 +136,7 @@ td {
 
 .videocontainer p {
 	width: 100% !important;
-	margin: 0 0 5% 0 !important;
+	margin: 0 0 3% 0 !important;
 }
 
 .videocontainer button {
@@ -149,7 +149,7 @@ td {
 .interesseflex {
 	display: flex;
 	align-content: stretch;
-	margin: 6% 0 !important;
+	margin: 5% 0 !important;
 }
 
 
@@ -200,6 +200,7 @@ td {
 
 .hochschule-ueberblick h2 {
 	width: 100% !important;
+	margin: 1% 0;
 }
 
 .hochschule-ueberblick p {
@@ -208,8 +209,8 @@ td {
 
 .flex-item-hochschule {
 	flex: 0 0 100%;
-	margin: 2% auto 0 auto !important;
-	padding: 0 5% 4% 5% !important;
+	margin: 2% 0 !important;
+	padding: 0 2% !important;
 }
 
 /* ----------------------------------- Hochschule Zahlen */
