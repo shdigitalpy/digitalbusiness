@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from datetime import datetime
 from .models import Sender
 from django.core.mail import send_mail
@@ -9,22 +9,47 @@ from django.utils.html import strip_tags
 
 def index(request):
 
-	if request.method == "POST":
+	if request.method == "POST" and 'button1' in request.POST:
+		message_name = request.POST['name']
+		message_vorname = request.POST['vorname']
+		message_email = request.POST['email']
+		message_telefon = request.POST['phone']
+		message_category = 'E-Mail-Lead'
+		
+		send_mail(
+			'FFHS - ' + message_category + ' ' + message_vorname + ' ' + message_name,
+			message_category + ' '+ message_name + ' ' + message_vorname + ' E-Mail: ' + message_email + ' Telefon: ' + message_telefon,
+			message_email,
+			['sandro@sh-digital.ch'],
+    		fail_silently=False,		
+			)
+
+		emailsender = Sender(message_name=message_name, message_vorname=message_vorname, message_email=message_email, message_telefon=message_telefon, message_category=message_category)
+		emailsender.save()
+
+		context = { 'message_vorname': message_vorname }
+		return render(request, 'index.html', context)
+
+	if request.method == "POST" and 'button2' in request.POST:
 		message_name = request.POST['name']
 		message_vorname = request.POST['vorname']
 		message_email = request.POST['email']
 		message_telefon = request.POST['phone']
 		message_bemerkungen = request.POST['bemerkungen']
+		message_category = 'Anmeldung FFHS Forward'
 
 		send_mail(
-			'FFHS Anfrage - ' + message_name + message_vorname,
-			'Name: '+ message_name + ' Vorname: ' + message_vorname + ' E-Mail: ' + message_email + ' Telefon: ' + message_telefon + ' Bemerkungen: ' + message_bemerkungen,
+			'FFHS - ' + message_category + ' ' + message_vorname + ' ' + message_name,
+			message_category + ' '+ message_name + ' ' + message_vorname + ' E-Mail: ' + message_email + ' Telefon: ' + message_telefon + ' Bemerkungen: ' + message_bemerkungen,
 			message_email,
 			['sandro@sh-digital.ch'],
     		fail_silently=False,		
 			)
-		success_message = 'Die Nachricht wurde gesendet!'
-		return render(request, 'index.html', {'message_vorname': message_vorname})
+
+		emailsender = Sender(message_name=message_name, message_vorname=message_vorname, message_email=message_email, message_telefon=message_telefon, message_bemerkungen=message_bemerkungen, message_category=message_category)
+		emailsender.save()
+
+		return redirect('https://registration.ffhs.ch/campus/campus/Portal/SelectApplicationProcedure?l=de&t=')
 	else:
 
 		x = datetime.now()

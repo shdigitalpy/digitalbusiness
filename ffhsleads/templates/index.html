@@ -6,17 +6,18 @@
 
 {% block content %}
 
-  <!--SENDMAIL Start--> {% if message_name %}
-  <div class="container-fluid">
-  <div id="home"><p>
-  {{ success_message }} 
-  Zurück zur <a href="{% url 'index' %}">Webseite</a>.</p></div>
-            </div>
-            {% else %}
-    <!--SENDMAIL End-->
 
 <div class="container-fluid">
 <div id="home">
+
+     <!--SENDMAIL Start--> {% if message_vorname %}
+     <div class="container-fluid">
+      <div id="home"><h1>Die Nachricht wurde gesendet!</h1>
+     </div>
+      </div>
+      {% endif %}
+
+   <!--SENDMAIL End-->
 			<h1>International anerkanntes Studium mit Vertiefung Digital Business</h1>
 			<p>Der digitale Wandel ist allgegenwärtig: Digitale Transformation und disruptive Geschäftsmodelle, Künstliche Intelligenz, Internet der Dinge, Social Media und digital Leadership. Digitalisierung beeinflusst und verändert die Wirtschaft und ist aus der betriebswirtschaftlichen Praxis nicht mehr wegzudenken.</p>
 </div>
@@ -95,15 +96,17 @@
           
          <div class="row">
 	        
-            <div class="col-md-6">
-                    <div class="form-group">
-            	          <input type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name muss ausgefüllt werden.">
-                	     <div class="help-block with-errors"></div>
-                    </div>
-           	</div>
+            
              <div class="col-md-6">
                     <div class="form-group">
                         <input type="text" name="vorname" class="form-control" placeholder="Vorname" required="required" data-error="Vorname muss ausgefüllt werden.">
+                       <div class="help-block with-errors"></div>
+                    </div>
+            </div>
+
+            <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name muss ausgefüllt werden.">
                        <div class="help-block with-errors"></div>
                     </div>
             </div>
@@ -120,18 +123,18 @@
                   <div class="help-block with-errors"></div>
                </div>
             </div>
-            <div class="col-md-12">
+            <!--<div class="col-md-12">
                <div class="form-group">
                   <input type="text" name="bemerkungen" class="form-control" placeholder="Bemerkungen (freiwillig)">
                   <div class="help-block with-errors"></div>
                </div>
-            </div>
+            </div>-->
           </div>
-
+          
           <div class="row">
             <div class="col-md-12">
             	<div class="form-group">
-          	           <input type="submit" class="btn btn-md btn-send" value="Jetzt absenden">
+          	           <input type="submit" name="button1" class="btn btn-md btn-send" value="Jetzt absenden">
                 </div>
             </div>
           </div>
@@ -224,7 +227,7 @@
                             </div>
                           </div>
                           <div class="col-md-12">
-                            <input type="submit" class="btn btn-warning btn-lg btn-send" value="Jetzt online anmelden">
+                            <input type="submit" name="button2" class="btn btn-warning btn-lg btn-send" value="Jetzt online anmelden">
                           </div>
                         </div>               
         </form> 
@@ -240,7 +243,6 @@
     </div><!--End Videocontainer -->
   </div><!--End Fluid Container -->
 		
-{% endif %}
 {% endblock %}
 
 

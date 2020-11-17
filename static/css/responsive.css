@@ -35,10 +35,40 @@
 	    color: var(--white);
 	}
 
+/* ----------------------------------- Hochschule */
+
+	.flex {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: none;
+}
+
 	.flex-item-hochschule {
 		flex: 0 0 100%;
 		margin: 2% 0 !important;
+		padding: 2% 0 !important;
 }
+	.hochschule-ueberblick h2 {
+		padding: 1% 0 !important;
+		margin: 0;
+}
+
+	.hochschule-ueberblick p {
+		margin: 0;
+	}
+/* ----------------------------------- Digital Business */
+
+	.home1 h1 {
+		padding: 2% 0;
+		width: 100% !important;
+}
+
+	.home1 p {
+		width: 100% !important;
+		padding: 2% 0 !important;
+	}
+
+
 
 	/* ----------------------------------- Kontaktformular */
 	.contact .flex-item {
@@ -82,10 +112,41 @@
 	    color: var(--white);
 	}
 
+
+/* ----------------------------------- Hochschule */
+
+	.flex {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: none;
+}
+
 	.flex-item-hochschule {
 		flex: 0 0 100%;
 		margin: 2% 0 !important;
+		padding: 2% 0 !important;
 }
+	.hochschule-ueberblick h2 {
+		padding: 1% 0 !important;
+		margin: 0;
+}
+
+	.hochschule-ueberblick p {
+		margin: 0;
+	}
+
+/* ----------------------------------- Digital Business */
+	.home1 h1 {
+		padding: 2% 0;
+		width: 100% !important;
+}
+
+	.home1 p {
+		width: 100% !important;
+		padding: 2% 0 !important;
+	}
+
+
 
 	/* ----------------------------------- Kontaktformular */
 	.contact .flex-item {
@@ -154,15 +215,15 @@
 
 	#home h1, h2 {
 		width: 100%;
-		margin: 2% auto;
-		padding: 2% 2% 0 2%;;
+		margin: 2% 0;
+		padding: 2% 0;
 }
 
 
 	#home p {
 		width: 100% !important; 
-		margin: 2% auto !important;
-		padding: 2% !important;
+		margin: 2% 0 !important;
+		padding: 2% 0 !important;
 }
 
 /* ----------------------------------- Video */
@@ -171,6 +232,10 @@
 		width: 100%;
 		margin: 0;
 }
+
+	.videocontainer h2 {
+		padding: 2%;
+	}
 
 	.videocontainer p {
 		padding: 2% !important;
@@ -222,6 +287,7 @@
 
 	.home1-flex-item {
 		flex: 0 0 100%;
+		padding: 2% !important;
 
 	}
 
@@ -249,6 +315,7 @@
 	/* ----------------------------------- Video Bottom */
 	.belowvideo {
 		width: 90%;
+		padding: 2%;
 }
 
 /* ----------------------------------- Footer */
