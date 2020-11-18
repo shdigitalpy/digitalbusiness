@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ffhsleads',
     'django.contrib.sitemaps',
-    'django.contrib.sites'
+    #'django.contrib.sites'
 ]
 
 SITE_ID = 1
