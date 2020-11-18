@@ -8,18 +8,16 @@
 	.navbar {
 		display: flex;
 		justify-content: space-between;
-		}
+}
 
 	.navbar-nav {
  		width: 100%;
-	}
-
-
+}
 
 	#home {
 		padding: 3% 3% 8% 3%;
 		background-color: var(--white);
-	}
+}
 
 	#home h1, h2 {
 		width: 100% !important;
@@ -33,7 +31,7 @@
 	.videocontainer {
 		width: 100%;
 		margin: 0 auto;
-	}
+}
 
 	.interesseflex {
 		flex-wrap: wrap;
@@ -262,7 +260,7 @@
 
 	.videocontainer {
 		width: 100%;
-		margin: 0;
+		margin: 2% 0;
 }
 
 	.videocontainer h2 {

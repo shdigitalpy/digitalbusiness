@@ -131,7 +131,7 @@ td {
 
 .videocontainer h2 {
 	width: 100% !important;
-	margin: 10% 0 1% 0 !important;
+	margin: 5% 0 1% 0 !important;
 }
 
 .videocontainer p {
@@ -141,6 +141,19 @@ td {
 
 .videocontainer button {
 	margin-top: 1.5%;
+}
+
+#aufeinenblick {
+	padding: 1% 3% 2% 3%;
+	background-color: rgba(42, 133, 100, 0.8);
+	color: var(--white);
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+}
+
+#aufeinenblick th, td {
+	color: var(--white);
 }
 
 /* ----------------------------------- Call to Action */
