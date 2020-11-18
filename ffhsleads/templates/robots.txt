@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+
+
+sitemap: https://www.ffhs-digital-business-studieren.ch/sitemap.xml
