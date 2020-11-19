@@ -1,5 +1,7 @@
-User-agent: *
+User-Agent: *
+User-agent: Googlebot
+Disallow:
+User-agent: Googlebot-image
+Disallow:
 Disallow: /admin/
-
-
 sitemap: https://www.ffhs-digital-business-studieren.ch/sitemap.xml
