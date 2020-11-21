@@ -166,7 +166,7 @@
 	}
 
 /* ----------------------------------- Digital Business */
-	.home1 h1 {
+	.home1 h2 {
 		padding: 2% 0;
 		width: 100% !important;
 }
@@ -325,7 +325,7 @@
 		flex: 0 0 100%;
 	}
 
-	.home1 h1 {
+	.home1 h2 {
 		font-size: 1.8rem !important;
 		padding: 2% 2% 0 2%;
 		width: 100% !important;
