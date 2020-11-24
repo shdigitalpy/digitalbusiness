@@ -5,7 +5,7 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
 
-  <a class="navbar-brand" href="{% url 'index' %}"><img class="logo" alt="ffhs logo wuerfel" src="{% static 'images/logo-ffhs-wuerfel.png' %}"></a>
+  <a class="navbar-brand" href="{% url 'index' %}" title="Würfel Logo"><img class="logo" alt="ffhs logo wuerfel" src="{% static 'images/logo-ffhs-wuerfel.png' %}"></a>
                 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">    
       <span class="navbar-toggler-icon"></span>
@@ -13,9 +13,10 @@
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
            <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#aufeinenblick">Bachelor of Science</a></li>
-              <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#hochschule">Fachhochschule</a></li>
-              <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#home1">Digital Business <sup><span class="badge badge-danger">new</span></sup></a></li>
+              <li class="nav-item"><a title="Studium auf einen Blick" class="nav-link" href="{% url 'index' %}#aufeinenblick">Digital Business studieren <sup><span class="badge badge-danger">new</span></sup></a></li>
+              <li class="nav-item"><a title="Digital Studiengang" class="nav-link" href="{% url 'index' %}#srfvideo">TV-Beitrag Online Studium</a></li>
+              <li class="nav-item"><a title="Digital Business Studium Anmeldung" class="nav-link" href="{% url 'index' %}#digitalbusiness">Was ist Digital Business</a></li>
+              
           </ul>
           </div>
 </nav>

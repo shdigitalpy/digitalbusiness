@@ -19,7 +19,7 @@ html, body {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	font-weight: 900;
 }
 
@@ -93,12 +93,12 @@ td {
 
 #home h1, h2 {
 	width: 40%;
-	margin: 2% auto;
+	margin: 2% auto 0.5%;
 }
 
 #home p {
 	width: 40% !important; 
-	margin: 2% auto !important;
+	margin: 0 auto 2% !important;
 }
 
 /* ----------------------------------- Video */
@@ -143,6 +143,10 @@ td {
 	margin-top: 1.5%;
 }
 
+.bewertungen {
+	margin: 0 2% !important;
+}
+
 #aufeinenblick {
 	padding: 1% 3% 2% 3%;
 	background-color: rgba(42, 133, 100, 0.8);
@@ -155,6 +159,65 @@ td {
 #aufeinenblick th, td {
 	color: var(--white);
 }
+
+
+.videocontainer a {
+	color: var(--black) !important;
+}
+
+.tipp {
+	font-size: 1rem;
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	padding: 2%;
+}
+
+.flexmodule-container {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-content: space-between !important;
+    width: 100%;
+}
+
+.flexmodule-item {
+	flex: 0 0 50%;
+	padding: 2% 2%;
+	margin: 0 0.25%;
+	border: 0.25px solid var(--grey);
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	background-color: var(--blue);
+	color: white;
+
+}
+
+.flexmodule-vert-container {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexmodule-vert-item {
+	flex: 0 0 100%;
+	padding: 2% 2%;
+	margin: 1% 0.25%;
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	background-color: var(--yellow);
+	color: black;
+}
+
+.studienberatung h4 {
+	padding: 0;
+}
+
+
 
 /* ----------------------------------- Call to Action */
 
@@ -197,6 +260,7 @@ td {
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	border: 10px solid var(--yellow);
 }
 
 
@@ -240,7 +304,7 @@ td {
 .flex-item {
 	flex: 0 0 50%;
 	background: var(--white);
-	padding: 4% 6%; 
+	padding: 3% 5%; 
 	margin: 0 2%;
 	border-radius: 40px;
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
@@ -258,83 +322,6 @@ td {
 	font-size: 1.2rem !important;
 }
 
-
-.bewertungen {
-	margin: 0 2% !important;
-}
-
-/* ----------------------------------- Digital Business */
-
-.home1 {
-	padding: 5% 0 2% 0 !important;
-}
-
-.home1-flex-item {
-	flex: 0 0 60%;
-	background: var(--white);
-	margin: 0 2%;
-}
-
-.home1-flex-item-img {
-	flex: 0 0 40%;
-}
-
-.home1 h2 {
-	font-size: 1.8rem !important;
-	padding: 0 5%;
-	width: 100% !important;
-}
-
-.home1 p {
-	width: 100% !important;
-	margin: 0 !important;
-	padding: 0 5% 4% 5% !important;
-}
-
-.home1 img {
-	width: 100%;
-}
-
-/* ----------------------------------- Kontaktformular */
-
-.contact .flex-item {
-	flex: 0 0 50%;
-	margin: 0 auto;
-	background-color: var(--red);
-	color: var(--white);
-	border: 4px solid var(--white);
-}
-
-.contact {
-	padding: 3% 0 0 0;
-	background-color: var(--grey);
-	background-image:
-	linear-gradient(45deg, 
-		#ffffff 33%, 
-		transparent 33%, 
-		transparent 66%, 
-		#ffffff 66%),
-
-	linear-gradient(135deg, 
-		#ffffff 33%, 
-		transparent 33%, 
-		transparent 66%, 
-		#ffffff 66%)
-	;
-	background-size: 1rem 1rem;
-
-}
-
-.contact h2 {
-	width: 100% !important;
-	margin: 0 !important;
-	padding: 0 !important;
-}
-
-.contact p {
-	margin: 0 !important;
-	padding: 2% 0 !important;
-}
 
 /* ----------------------------------- Video Bottom */
 .belowvideo {
@@ -362,7 +349,72 @@ td {
 }
 
 .video-bottom {
-	padding: 3% 0;
+	padding: 5% 0;
+	background-color: var(--grey);
+	background-image:
+	linear-gradient(45deg, 
+		#ffffff 33%, 
+		transparent 33%, 
+		transparent 66%, 
+		#ffffff 66%),
+
+	linear-gradient(135deg, 
+		#ffffff 33%, 
+		transparent 33%, 
+		transparent 66%, 
+		#ffffff 66%)
+	;
+	background-size: 2rem 2rem;
+}
+
+
+/* ----------------------------------- Digital Business */
+
+.home1 {
+	padding: 8% 0 2% 0 !important;
+	position: relative;
+	z-index: 5;
+
+}
+
+.home1-flex-item {
+	flex: 0 0 60%;
+	background: var(--white);
+	margin: 0 2%;
+}
+
+.home1-flex-item-img {
+	flex: 0 0 40%;
+}
+
+.home1 h2, h3, h4 {
+	font-size: 1.8rem !important;
+	padding: 0 3%;
+	width: 100% !important;
+}
+
+.home1 p, ul li {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 5% 3% 5% !important;
+	list-style-type: none;
+}
+
+.home1 img {
+	width: 100%;
+}
+
+/* ----------------------------------- Kontaktformular */
+.contact .flex-item {
+	flex: 0 0 45%;
+	margin: 0 auto;
+	background-color: var(--red);
+	color: var(--white);
+	border: 4px solid var(--white);
+}
+
+.contact {
+	padding: 5% 0;
 	background-color: var(--grey);
 	background-image:
 	linear-gradient(45deg, 
@@ -378,6 +430,40 @@ td {
 		#ffffff 66%)
 	;
 	background-size: 1rem 1rem;
+}
+
+.contact h3 {
+	width: 100% !important;
+	margin: 0 0 2% 0 !important;
+	padding: 0 !important;
+	color: var(--white);
+	font-size: 1.5rem  !important;
+}
+
+.contact h4 {
+	width: 100% !important;
+	margin: 4% 0 2% 0 !important;
+	padding: 0 !important;
+	color: var(--muted);
+	font-size: 1.2rem !important;
+}
+
+.contact p, ul li {
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+.contact ul {
+	padding-left: 0;
+}
+
+.button-anmeldung input {
+	margin: 0 0 4% 0;
+}
+
+.anmeldung-infos .card  {
+	color: var(--white);
+	background-color: var(--red);
 }
 
 
