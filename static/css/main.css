@@ -120,6 +120,7 @@ td {
 	display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    align-items: center;
     width: 100%;
 }
 

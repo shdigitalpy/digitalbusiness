@@ -14,10 +14,10 @@
  		width: 100%;
 }
 
-	#home {
-		padding: 3% 3% 8% 3%;
-		background-color: var(--white);
-}
+	.inside-home {
+		width: 70%;
+		margin: 0 auto;
+	}
 
 	#home h1, h2 {
 		width: 100% !important;
@@ -115,6 +115,11 @@
 
 /* ----------------------------------- Responsive 992px Tablet small*/
 @media (max-width: 992px){
+
+	.inside-home {
+		width: 70%;
+		margin: 0 auto;
+	}
 	
 	#home h1, h2 {
 		width: 100%;
@@ -238,9 +243,9 @@
 
 /* ----------------------------------- Home and Titel */
 
-	#home {
-		background-color: var(--white);
-		
+	.inside-home {
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	#home h1, h2 {
@@ -255,6 +260,10 @@
 		margin: 2% 0 !important;
 		padding: 2% 0 !important;
 }
+
+	.home-flexitem {
+		font-size: 1rem;
+	}
 
 /* ----------------------------------- Video */
 
