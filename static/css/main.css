@@ -19,7 +19,7 @@ html, body {
 }
 
 h1 {
-	font-size: 2.3rem;
+	font-size: 2.1rem;
 	font-weight: 900;
 }
 
@@ -37,6 +37,15 @@ h5 {
 	font-size: 1.2rem;
 	font-weight: 500;
 }
+
+a { color: inherit; } 
+
+a:hover {
+     color: var(--black); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
 
 p {
 	font-size: 1.3rem;
@@ -80,25 +89,55 @@ td {
 }
 
 /* ----------------------------------- Home and Titel */
-
-#home {
-	height: 50%;
-	padding: 3% 0 8% 0;
+.bghome-color {
 	background-color: var(--grey);
+}
+
+.bghome-size {
+	height: 50%;
+	padding: 3% 0 12% 0;
 	margin-bottom: -10vw;
 	overflow: visible;
 	z-index: 5;
 }
 
+.inside-home {
+	width: 40%;
+	margin: 0 auto;
+}
+
 
 #home h1, h2 {
-	width: 40%;
 	margin: 2% auto 0.5%;
 }
 
 #home p {
-	width: 40% !important; 
 	margin: 0 auto 2% !important;
+}
+
+
+.home-flex {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+
+.home-flexitem {
+	flex: 0 0 50%;
+	padding: 1.5%;
+	margin: 0;
+	border: 3px solid var(--grey);
+	-webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	background-color: var(--red);
+	color: var(--white) !important;
+	text-align: center;
+	font-size: 1.3rem;
 }
 
 /* ----------------------------------- Video */
@@ -165,11 +204,35 @@ td {
 	color: var(--black) !important;
 }
 
+
+
+/* ----------------------------------- Zulassung, Aufbau, Weitere Informationen */
+
+
+.card-body h3, h4 {
+	padding: 0 !important;
+}
+
+.card-body p {
+	font-size: 1.3rem;
+}
+
+.cut-text {
+
+}
+
+.info p {
+	font-size: 1.2rem !important;
+}
+
+
+.studienberatung h4 {
+	padding: 0;
+}
+
 .tipp {
 	font-size: 1rem;
-	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
-	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+	border-left: 5px solid var(--grey);
 	padding: 2%;
 }
 
@@ -205,7 +268,7 @@ td {
 .flexmodule-vert-item {
 	flex: 0 0 100%;
 	padding: 2% 2%;
-	margin: 1% 0.25%;
+	margin: 0 0.25%;
 	-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
 	box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
@@ -213,9 +276,6 @@ td {
 	color: black;
 }
 
-.studienberatung h4 {
-	padding: 0;
-}
 
 
 
@@ -272,6 +332,9 @@ td {
 #leadform h3 {
 	width: 100% !important;
 }
+
+
+
 
 /* ----------------------------------- Hochschule */
 
@@ -414,7 +477,10 @@ td {
 }
 
 .contact {
-	padding: 5% 0;
+	padding: 5% 0;	
+}
+
+.contact-bg {
 	background-color: var(--grey);
 	background-image:
 	linear-gradient(45deg, 

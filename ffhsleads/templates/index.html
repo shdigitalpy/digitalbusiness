@@ -7,8 +7,9 @@
 {% block content %}
 
 
-<div class="container-fluid">
-<div id="home">
+<div class="container-fluid bghome-color">
+<div class="bghome-size" id="home">
+  <div class="inside-home">
 
      <!--SENDMAIL Start--> {% if message_vorname %}
      <div class="container-fluid">
@@ -17,20 +18,31 @@
       </div>
       {% endif %}
 
-   <!--SENDMAIL End-->
-			<h1>Digitale Transformation bei Unternehmen</h1>
-			<p>Neue digitale Technologien im Privat- und Geschäftsleben führen zu neuen Ansprüchen bei Kunden. Die Prozesse in einem Unternehmen müssen  mit dem neuen Verhalten der Kunden gleichziehen. Unternehmen müssen in der Lage sein, bewährte Prozesse mit digitalen ablösen zu können. Gelingt dies nicht, können grosse Marktanteile von Jahrzehnte dominierenden Unternehmen schnell verloren gehen. Ein sehr populäres Beispiel ist das Startup "Uber", welches die traditionelle Taxibranche auf den Kopf gestellt hat. Aus diesem Grund benötigen die Unternehmen spezialisierte Wirschaftsfachleute, welche für digitale Projekte eingesetzt werden können. Andere Beispiele für digitale Transformation sind Internet of Things, Künstliche Intelligenz oder Blockchain.  </p>
 
-</div>
-</div>
+   <!--SENDMAIL End-->
+			<h1>Washalb ist die digitale Transformation wichtig</h1>
+			<p>Populäre Startups und weltverändernde Technologien finden nicht nur im Silicon Valley statt, die Digitalisierung verändert Unternehmen auf der gesamten Welt. Auf dem Arbeitsmarkt werden neue wichtige Funktionen und Jobs geschaffen.<br>Eine sehr interessante Funktion ist der "Digital Transformation Manager", ein strategisch digitaler Fachexperte, der Unternehmen aus ökonomischer Sicht digital transformiert. Das unten vorgestellte Studium Digital Business bildet entsprechende Digitalexperten aus.</p>
+
+      <div class="home-flex">
+      <div class="home-flexitem">
+      <a href="{% url 'index' %}#digitaltransformationmanager">Mehr zu Digital Business</a>
+      </div>
+      <div class="home-flexitem ml-2">
+      <a href="{% url 'index' %}#topvideo">Mehr zum Studium</a>
+      </div>
+      </div>
+     
+</div><!--end inside-->
+</div><!--end bg-home-->
+</div><!--end container fluid -->
 
 <div class="container">
 <div class="videocontainer">
 		 <!--Video -->
-        <div class="embed-responsive embed-responsive-16by9 video">
+        <div class="embed-responsive embed-responsive-16by9 video" id="topvideo">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kzww0TywqSg?" allowfullscreen allow="autoplay"></iframe>
         </div>
-         <div class="bewertungen" data-romw-token="nh68yFvuIkwydxkXtZbDztVOdutlRhyDhqvvHKTcLhDeelyUhg"></div>
+         <div id="bewertungen" class="bewertungen" data-romw-token="nh68yFvuIkwydxkXtZbDztVOdutlRhyDhqvvHKTcLhDeelyUhg"></div>
 
         <h2>Digital Business studieren: Ein international anerkannter Titel</h2>
         <p>Der digitale Wandel ist nicht nur in der Gesellschaft weit verbreitet. Neuartige Geschäftsmodelle und Künstliche Intelligenz sind aus der Wirtschaft nicht mehr wegzudenken. Die Digitalisierung verändert gerade die ganze Welt, macht es nicht auch Sinn, ein Studium in diesem Bereich anzuschauen? Der hier vorgestellte Studiengang Bachelor of Science Betriebsökonomie SUSPI in Digital Business ist international anerkannt und ergibt bei Abschluss 180 ECTS. ECTS ist ein europäischer Standard für die Übertragung und Akkulumlierung von Studienleistungen. Es macht einen internationalen Vergleich verschiedener Studiengänge möglich und transparent.
@@ -49,6 +61,14 @@
               <th scope="row">Abschluss</th>
               <td>Bachelor of Science in Digital Business (SUPSI in Betriebsökonomie)</td>
             </tr>
+            <tr>
+              <th scope="row">Wahlmodule</th>
+              <td>
+                <p>Blockchain für Manager (2 ECTS)</p>
+                <p>Künstliche Intelligenz für Manager (2 ECTS)</p>
+                <p>Web Engineering Basics (2 ECTS)</p>
+              </td>
+            </tr>          
             <tr>
               <th scope="row">Beginn</th>
               <td>Erstmals Herbst 2021</td>
@@ -87,7 +107,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
+      </div><!-- container aufeinenblick end -->
       <br>
 
                   <!--Accordion wrapper-->
@@ -110,28 +130,29 @@
                       <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
                         data-parent="#accordionEx1">
                         <div class="card-body">
-                              <p>Zum diesem Studium zugelassen sind Personen, die eine der folgenden Voraussetzungen erfüllen
-              <ul>
-                <li>Berufsmatura</li>
-              <li>Fachmatura *</li>
-              <li>gymnasiale Matura mit einjähriger Berufspraxis *</li>
-              <li>Diplom einer höheren Fachschule (HF) *: individueller Einstieg oder 5. Semester für Betriebswirtschafter HF</li>
-              <small>* im gleichen oder verwandten Gebiet der Studienrichtung (nach Abklärung)</small>
-              </ul>
+                        <p>Zum diesem Studium zugelassen sind Personen, die eine der folgenden Voraussetzungen erfüllen</p>
+                      <p class="tipp">
+                      Berufsmatura<br>
+                      Fachmatura *<br>
+                      gymnasiale Matura mit einjähriger Berufspraxis *<br>
+                      Diplom einer höheren Fachschule (HF) *: individueller Einstieg oder 5. Semester für Betriebswirtschafter HF<br>
+                      <small>* im gleichen oder verwandten Gebiet der Studienrichtung (nach Abklärung)</small>
+                      </p>
+              
 
-              <p class="tipp"><b style="color:var(--darkgrey);text-decoration: underline;">Hinweis:</b> Studieninteressierte mit Abschluss auf tertiärer Stufe* (eidg. Fachausweis, eidg. Diplom) mit mehrjähriger Berufspraxis* oder Personen über 25 Jahre (bei Studiumsbeginn) mit mehrjähriger qualifizierter Berufserfahrung (EFZ) können auch mittels Aufnahmeprüfung direkt zum Studium zugelassen werden. Um sich gezielt auf die Aufnahmeprüfung vorzubereiten, empfehlen wir den Vorbereitungskurs zur Aufnahmeprüfung.</p>
+                      <p class="tipp"><b style="background-color: var(--yellow);color:var(--darkgrey);text-decoration: underline;">Hinweis:</b> Studieninteressierte mit Abschluss auf tertiärer Stufe* (eidg. Fachausweis, eidg. Diplom) mit mehrjähriger Berufspraxis* oder Personen über 25 Jahre (bei Studiumsbeginn) mit mehrjähriger qualifizierter Berufserfahrung (EFZ) können auch mittels Aufnahmeprüfung direkt zum Studium zugelassen werden. Um sich gezielt auf die Aufnahmeprüfung vorzubereiten, empfehlen wir den Vorbereitungskurs zur Aufnahmeprüfung.</p>
 
               <p>
               Es werden folgende Eingangskompetenzen auf Niveau Berufsmatura vorausgesetzt:
 
-              <ul>
-                <li>Englisch: Niveau der CEF-Kompetenzstufe B2</li>
-              <li>Mathematik: Abgangskompetenzen Mathematik einer Berufsmatura</li>
-              <li>Buchhaltung: Abgangskompetenzen Buchhaltung einer Berufsmatura</li>
-              <li>Deutsch: Für Studieninteressierte nicht deutscher Muttersprache werden </li>
-              <li>Deutschkenntnisse auf dem Niveau der CEF-Kompetenzstufe C1 vorausgesetzt.</li>
-              <li>Berufstätigkeit: Aufgrund der Praxisorientierung des Studiums wird den Studierenden empfohlen, einer Berufstätigkeit von maximal 80% mit Bezug zur Studienfachrichtung nachzugehen.</li>
-              </ul>
+             <p class="tipp">
+              Englisch: Niveau der CEF-Kompetenzstufe B2<br>
+              Mathematik: Abgangskompetenzen Mathematik einer Berufsmatura<br>
+              Buchhaltung: Abgangskompetenzen Buchhaltung einer Berufsmatura<br>
+              Deutsch: Für Studieninteressierte nicht deutscher Muttersprache werden<br>
+              Deutschkenntnisse auf dem Niveau der CEF-Kompetenzstufe C1 vorausgesetzt<br>
+              Berufstätigkeit: Aufgrund der Praxisorientierung des Studiums wird den Studierenden empfohlen, einer Berufstätigkeit von maximal 80% mit Bezug zur Studienfachrichtung nachzugehen<br>
+              </p>
 
 
               </p>
@@ -165,27 +186,26 @@
                         (7.- 9. Semester) zusammen.</p>
 
                         <h4>Modulübersicht Grundstudium 120 ECTS-Credits</h4>
-                        <br>
                         <div class="flexmodule-container">
                         <div class="flexmodule-item">
                         <h5>1. Semester</h5>
-                        <ul>
-                        <li>Managementorientierte Betriebswirtschaft</li>
-                        <li>Volkswirtschaft I</li>
-                        <li>Wirtschaftsrecht I</li>
-                        <li>Business English Higher I</li>
-                        </ul>
+                        
+                        <p>Managementorientierte Betriebswirtschaft</p>
+                        <p>Volkswirtschaft I</p>
+                        <p>Wirtschaftsrecht I</p>
+                        <p>Business English Higher I</p>
+                        
                       
                         </div>
 
                         <div class="flexmodule-item">
                         <h5>2. Semester</h5>
-                        <ul>
-                          <li>Financial Accounting</li>
-                        <li>Volkswirtschaft II</li>
-                        <li>Wirtschaftsrecht II</li>
-                        <li>Business English Higher II</li>
-                        </ul>
+                        
+                        <p>Financial Accounting</p>
+                        <p>Volkswirtschaft II</p>
+                        <p>Wirtschaftsrecht II</p>
+                        <p>Business English Higher II</p>
+                        
                         </div>
 
                         </div><!-- flexcontainer end-->
@@ -194,22 +214,20 @@
 
                         <div class="flexmodule-item">
                         <h5>3. Semester</h5>
-                        <ul>
-                          <li>Management Accounting</li>
-                        <li>Wirtschaftsmathematik I</li>
-                        <li>Organisationsmanagement</li>
-                        <li>Quantitative Forschungsmethoden und Statistik I</li>
-                        </ul>        
+                        <p>Management Accounting</p>
+                        <p>Wirtschaftsmathematik I</p>
+                        <p>Organisationsmanagement</p>
+                        <p>Quantitative Forschungsmethoden und Statistik I</p>    
                         </div>
 
                         <div class="flexmodule-item">
                         <h5>4. Semester</h5>
-                         <ul>
-                          <li>Finance I</li>
-                        <li>Innovationsmanagement</li>
-                        <li>Volkswirtschaft III</li>
-                        <li>Quantitative Forschungsmethoden und Statistik II</li>
-                        </ul> 
+                         
+                        <p>Finance I</p>
+                        <p>Innovationsmanagement</p>
+                        <p>Volkswirtschaft III</p>
+                        <p>Quantitative Forschungsmethoden und Statistik II</p>
+                       
                         </div>
 
                         </div><!-- flexcontainer end-->
@@ -218,22 +236,19 @@
 
                         <div class="flexmodule-item">
                         <h5>5. Semester</h5>
-                        <ul>
-                          <li>Beschaffung, Produktion & Logistik</li>
-                        <li>Human Resource Management / Corporate Social Responsibility</li>
-                        <li>Businessplanung / Präsentations- und Argumentationstraining</li>
-                        <li>Marketing</li>
-                        </ul> 
+                        <p>Beschaffung, Produktion & Logistik</p>
+                        <p>Human Resource Management / Corporate Social Responsibility</p>
+                        <p>Businessplanung / Präsentations- und Argumentationstraining</p>
+                        <p>Marketing</p>
+                        
                         </div>
 
                         <div class="flexmodule-item">
                         <h5>6. Semester</h5>
-                        <ul>
-                          <li>Projektmanagement Grundlagen</li>
-                        <li>Strategisches Management /  Business Simulation</li>
-                        <li>Mitarbeiterführung (inkl. Kommunikationstraining)</li>
-                        <li>Qualitative Forschungsmethoden</li>
-                        </ul>  
+                        <p>Projektmanagement Grundlagen</p>
+                        <p>Strategisches Management /  Business Simulation</p>
+                        <p>Mitarbeiterführung (inkl. Kommunikationstraining)</p>
+                        <p>Qualitative Forschungsmethoden</p>
                         </div>
                         </div><!-- flexcontainer end-->
 
@@ -241,51 +256,51 @@
                         <br>
                         <h4>Vertiefungsrichtung Digital Business - 60 ECTS-Credits</h4>
                         
-                        <div class="flexmodule-vert-container">
+                        <div class="flexmodule-vert-container" id="künstlicheintelligenz">
                         <div class="flexmodule-vert-item ">
                         <p>7. Semester
-                        Digital Transformation & Digital Business Models (5 ECTS)
-                        Grundlagen der Strategiearbeit im Kontext der digitalen Transformation. Grundlagen und Treiber der digitalen Transformation und Industrie 4.0. Digital Future Industries. Relevanz und Tools zur Entwicklung digitaler Geschäftsmodelle. Plattformen und digitale Ökosysteme.
+                        <p>Digital Transformation & Digital Business Models (5 ECTS)</p>
+                        <p>Grundlagen der Strategiearbeit im Kontext der digitalen Transformation. Grundlagen und Treiber der digitalen Transformation und Industrie 4.0. Digital Future Industries. Relevanz und Tools zur Entwicklung digitaler Geschäftsmodelle. Plattformen und digitale Ökosysteme.</p>
 
-                        Digital Technologies & Trends (5 ECTS)
-                        Behandlung neuer Technologien wie Künstliche Intelligenz, IoT, Blockchain, VR und AR, Drohnen sowie Trends wie Kreislaufwirtschaft, Circular Economy, Plattformökonomie.
+                        <p>Digital Technologies & Trends (5 ECTS)</p>
+                        <p>Behandlung neuer Technologien wie Künstliche Intelligenz, IoT, Blockchain, VR und AR, Drohnen sowie Trends wie Kreislaufwirtschaft, Circular Economy, Plattformökonomie.</p>
 
-                        Entre- & Intrapreneurship: Agile Kompetenzen für die digitale Transformation (5 ECTS)
-                        Methoden des Lean Denkens und Handelns: Design Thinking, Sprints, Lean Startup, Lean Marketplaces, Schnelles Kundenwachstum.
+                        <p>Entre- & Intrapreneurship: Agile Kompetenzen für die digitale Transformation (5 ECTS)</p>
+                        <p>Methoden des Lean Denkens und Handelns: Design Thinking, Sprints, Lean Startup, Lean Marketplaces, Schnelles Kundenwachstum.</p>
 
-                        Wissenschaftliches Praxisprojekt I (5 ECTS)
-                        Erarbeitung eines wissenschaftlichen Praxisprojekts (I) unter Einbezug der Bedürfnisse des Auftraggebers und der Anwendung der im Studium erlernten Methoden und Ansätze.</p>
+                        <p>Wissenschaftliches Praxisprojekt I (5 ECTS)</p>
+                        <p>Erarbeitung eines wissenschaftlichen</p>Praxisprojekts (I) unter Einbezug der Bedürfnisse des Auftraggebers und der Anwendung der im Studium erlernten Methoden und Ansätze.</p>
                          </div>
 
                         <div class="flexmodule-vert-item">
-                        <p>8. Semester
-                        Product & Services Development in the Digital Age (5 ECTS)
-                        Digitale Produkt- und Serviceentwicklung: Analyse der Kundenbedürfnisse, Planung und Umsetzung des Produktentwicklungsprozesses, digitale Werkzeuge, Methoden und Prozesse zur Messung des Entwicklungserfolges sowie zur Steigerung der Effektivität.
+                        <p>8. Semester</p>
+                        <p>Product & Services Development in the Digital Age (5 ECTS)</p>
+                        <p>Digitale Produkt- und Serviceentwicklung: Analyse der Kundenbedürfnisse, Planung und Umsetzung des Produktentwicklungsprozesses, digitale Werkzeuge, Methoden und Prozesse zur Messung des Entwicklungserfolges sowie zur Steigerung der Effektivität.</p>
 
-                        Marketing in the Digital Age (5 ECTS)
-                        Marktanalyse und Innovationsmarketing, digitale Marketingstrategien, Marketingmanagement und digitale Transformation im Dienstleistungssektor, digitale Marketingkommunikation inkl. Social Media, Marke 4.0
+                        <p>Marketing in the Digital Age (5 ECTS)</p>
+                        <p>Marktanalyse und Innovationsmarketing, digitale Marketingstrategien, Marketingmanagement und digitale Transformation im Dienstleistungssektor, digitale Marketingkommunikation inkl. Social Media, Marke 4.0</p>
 
-                        Leadership & Change in the Digital Age (5 ECTS)
-                        Innovationsvorhaben- und teams im digitalen Wandel erfolgreich führen: Ansätze des New Work & Corporate Education, Strategien für den Change Prozess, Führung und Kommunikation, Chancen und Herausforderungen einer digitalen Unternehmenskultur, Coaching Tools.
+                        <p>Leadership & Change in the Digital Age (5 ECTS)</p>
+                        <p>Innovationsvorhaben- und teams im digitalen Wandel erfolgreich führen: Ansätze des New Work & Corporate Education, Strategien für den Change Prozess, Führung und Kommunikation, Chancen und Herausforderungen einer digitalen Unternehmenskultur, Coaching Tools.</p>
 
-                        Wissenschaftliches Praxisprojekt II (5 ECTS)
-                        Erarbeitung eines wissenschaftlichen Praxisprojekts (II) unter Einbezug der Bedürfnisse des Auftraggebers und der Anforderungen der FFHS</p>
+                        <p>Wissenschaftliches Praxisprojekt II (5 ECTS)</p>
+                        <p>Erarbeitung eines wissenschaftlichen Praxisprojekts (II) unter Einbezug der Bedürfnisse des Auftraggebers und der Anforderungen der FFHS</p>
                         </div>
 
                         <div class="flexmodule-vert-item">
-                        <p>9. Semester
+                        <p>9. Semester</p>
 
-                        Digital Experience Lab (3 ECTS)
-                        Am neuen FFHS-Standort direkt am HB Zürich (Gleisarena) werden Innovationen entwickelt. Vor Ort erarbeiten Studierende disruptive Geschäftsmodelle und erkunden Prototypen für die Welt von morgen: Egal ob programmieren, löten, 3D-Drucken oder digitale Services, im Digital Experience Lab  werden Innovationen erleb- und umsetzbar.
+                        <p>Digital Experience Lab (3 ECTS)</p>
+                        <p>Am neuen FFHS-Standort direkt am HB Zürich (Gleisarena) werden Innovationen entwickelt. Vor Ort erarbeiten Studierende disruptive Geschäftsmodelle und erkunden Prototypen für die Welt von morgen: Egal ob programmieren, löten, 3D-Drucken oder digitale Services, im Digital Experience Lab  werden Innovationen erleb- und umsetzbar.</p>
 
-                        Bachelor-Thesis (15 ECTS)
+                        <p>Bachelor-Thesis (15 ECTS)</p>
 
-                        Wahlpflichtmodule
-                        Im 9. Semester können Sie eines der folgenden drei Wahlmodule wählen.
+                        <p>Wahlpflichtmodule</p>
+                        <p>Im 9. Semester können Sie eines der folgenden drei Wahlmodule wählen.</p>
 
-                        Blockchain für Manager (2 ECTS)
-                        Künstliche Intelligenz für Manager (2 ECTS)
-                        Web Engineering Basics (2 ECTS)</p>
+                        <p>Blockchain für Manager (2 ECTS)</p>
+                        <p>Künstliche Intelligenz für Manager (2 ECTS)</p>
+                        <p>Web Engineering Basics (2 ECTS)</p>
                         </div>
                          </div><!-- flexcontainer end-->
                                       
@@ -312,8 +327,6 @@
                       <div id="collapseThree31" class="collapse studienberatung" role="tabpanel" aria-labelledby="headingThree31"
                         data-parent="#accordionEx1">
                         <div class="card-body">
-
-                          <br> <br> <br>
                           <h4>Studienberatung</h4>
                           <p>Die Studienberatung bietet für Studieninteressierte, Studierende und ehemalige Studierende verschiedene Informations- und Beratungsangebote an – kostenlos und unverbindlich.</p>
 
@@ -413,6 +426,19 @@
         <!--LEAD FORM End--> 
     	</div><!--Flexitem End--> 
     </div><!--Flexcontainer End--> 
+
+    <div class="container">
+      <div class="home1 flex" id="vorteile">
+        <!-- media start -->
+       <div class="media">
+        <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/digital-business-studierende.jpg' %}" alt="Generic placeholder image">
+        <div class="media-body">
+          <h2 class="mt-0 font-weight-bold">Sichern Sie sich Vorteile gegenüber anderen Bachelor Studenten</h2>
+          <p>In diesem Studiengang werden Sie zum Digitalexperten. Es befähigt Sie, eine führende Management Position innerhalb der digitalisierten Arbeitswelt einzunehmen. Unsere Studienabgänger übernehmen verantwortungsvolle Management- und Beratungsfunktion und setzen digitale Innovationen in Projekten um. Durch das Grundstudium erhalten Sie das betriebswirtschaftliche Know-How. Sie lernen digitale Projekte und Innovationen erfolgreich umzusetzen. <b>Entscheiden Sie sich für dieses Studium und legen Sie den Grundstein für eine erfolgreiche Karriere.</b></p>
+        </div>
+      </div><!-- media end -->
+      </div><!-- home1 end -->
+      </div><!-- container end -->
   
   <div class="hochschule-ueberblick flex" id="hochschule">
   <div class="flex-item-hochschule">
@@ -451,47 +477,69 @@
     </div><!--End Belowvideocontainer -->
   </div><!--End Fluid Container -->
 		
+      
+<!-- Info section start -->
       <div class="container">
-      <div class="home1 flex" id="home1">
+      <div class="home1 info flex" id="digitaltransformationmanager">
         <!-- media start -->
        <div class="media">
-        <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/digital-business-studierende.jpg' %}" alt="Generic placeholder image">
+        <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/digital-transformation-manager.jpg' %}" alt="Die Aufgaben eines Digital Transformation Manager">
         <div class="media-body">
-          <h2 class="mt-0 font-weight-bold">Sichern Sie sich Vorteile gegenüber anderen Bachelor Studenten</h2>
-          <p>In diesem Studiengang werden Sie zum Digitalexperten. Es befähigt Sie, eine führende Management Position innerhalb der digitalisierten Arbeitswelt einzunehmen. Unsere Studienabgänger übernehmen verantwortungsvolle Management- und Beratungsfunktion und setzen digitale Innovationen in Projekten um. Durch das Grundstudium erhalten Sie das betriebswirtschaftliche Know-How. Sie lernen digitale Projekte und Innovationen erfolgreich umzusetzen. <b>Entscheiden Sie sich für dieses Studium und legen Sie den Grundstein für eine erfolgreiche Karriere.</b></p>
+          <h2 class="mt-0 font-weight-bold">Die Aufgaben eines Digital Transformation Manager</h2>
+
+          <p>Ein Digital Transformation Manager hat eine essentielle und wichtige Aufgabe im Unternehmen. Der Digital Transformation Manager analysiert Technologien und Trends in der Branche und wie sich diese kurz-, mittel- und langfristig auf das Unternehmen direkt oder indirekt auswirken. Gleichermassen wird der Einfluss auf das eigene Unternehmen und die Wertschöpfungskette systematisch durchleuchtet. Die Digitalisierung von Prozessen ist eine wichtige, jedoch nicht die zentrale Aufgabe eines Digital Transformation Managers. 
+          <b>Die Hauptaufgabe</b> besteht darin, <b>neue innovative digitale Geschäftsmodelle</b> zu entwickeln um langfristige Wettbewerbsvorteile aufzubauen und dadurch das gesamte Unternehmen strategisch zu transformieren.</p>
+      </div>
+      </div><!-- media end -->
+      </div><!-- home1 end -->
+      </div><!-- container end -->
+
+
+       <div class="container">
+      <div class="home1 info flex" id="digitaletransformation">
+        <!-- media start -->
+       <div class="media">
+        <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/digitale-transformation-bei-unternehmen.jpg' %}" alt="Digitale Transformation bei Unternehmen">
+        <div class="media-body">
+          <h2 class="mt-0 font-weight-bold">Digitale Transformation bei Unternehmen</h2>
+          <p>Neue digitale Technologien im Privat- und Geschäftsleben führen zu neuen Ansprüchen bei Kunden. Die Prozesse in einem Unternehmen müssen mit dem neuen Verhalten der Kunden gleichziehen. Unternehmen müssen in der Lage sein, bewährte Prozesse mit digitalen ablösen zu können. Gelingt dies nicht, können grosse Marktanteile von Jahrzehnte dominierenden Unternehmen schnell verloren gehen. Ein sehr populäres Beispiel ist das Startup "Uber", welches die traditionelle Taxibranche auf den Kopf gestellt hat. Aus diesem Grund benötigen die Unternehmen spezialisierte Wirschaftsfachleute, welche für digitale Projekte eingesetzt werden können. Andere Beispiele für digitale Transformation sind <b><a href="{% url 'index' %}#aufeinenblick">Internet of Things, Künstliche Intelligenz oder Blockchain</a></b>.</p>.
         </div>
       </div><!-- media end -->
       </div><!-- home1 end -->
       </div><!-- container end -->
 
+
       <div class="container">
-      <div class="home1 flex" id="home1">
+      <div class="home1 info flex" id="lohn">
         <!-- media start -->
        <div class="media">
         <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/was-fuer-eine-entloehnung-kann-man-erwarten.jpg' %}" alt="Generic placeholder image">
         <div class="media-body">
           <h2 class="mt-0 font-weight-bold">Was für eine Entlöhnung können Sie nach diesem Studium erwarten?</h2>
-          <p>Ein Digital Marketing- oder Projektmanager verdient im Durschnitt gemäss verschiedenen Quellen einen Brutto-Jahreslohn von CHF 75'000.-- bis CHF 130'000.-- je nach Vorbildung und Unternehmen. Ein Digital Project Manager verdient gemäss dem führenden Schweizer Jobportal rund CHF 91'000.-- durchschnittlich. Führende Branchen in diesem Bereich beispielsweise die Medzinaltechnik zahlen einem Digital Project Manager sogar deutlich über CHF 100'000.--. Als Chief Digital Officer werden sogar bereits Summen von über CHF 130'000.-- jährlich angegeben. In grösseren Unternehmen können die Gehälter von CDOs bereits in Richtung einer halben Million gehen.<a href="https://www.jobs.ch/de/lohn/?canton=ch&term=digital%20project%20manager"> Quelle: jobs.ch</a></small></p>
+          <p>Die Funktion eines Digitalen Transformations-Manager wird in der Praxis oftmals auf mehrere Stellen aufgeteilt. Die oberste Instanz nennt sich Chief Digital Officer (kurz CDO). Ein Digital Marketing- oder Projektmanager verdient im Durschnitt gemäss verschiedenen Quellen einen Brutto-Jahreslohn von CHF 75'000.-- bis CHF 130'000.-- je nach Vorbildung und Unternehmen. Ein Digital Project Manager verdient gemäss dem führenden Schweizer Jobportal rund CHF 91'000.-- durchschnittlich. Führende Branchen in diesem Bereich beispielsweise die Medzinaltechnik zahlen einem Digital Project Manager sogar deutlich über CHF 100'000.--. Als Chief Digital Officer (kurz CDO) werden sogar bereits Summen von über CHF 130'000.-- jährlich angegeben. In grösseren Unternehmen können die Gehälter von CDOs bereits in Richtung einer halben Million gehen.<a href="https://www.jobs.ch/de/lohn/?canton=ch&term=digital%20project%20manager"> Quelle: jobs.ch</a></p>
         </div>
       </div><!-- media end -->
       </div><!-- home1 end -->
       </div><!-- container end -->
 
       <div class="container">
-      <div class="home1 flex" id="home1">
+      <div class="home1 info flex" id="home1">
         <!-- media start -->
        <div class="media" id="digitalbusiness">
         <img class="img-thumbnail d-flex align-self-start mr-3" style="width: 25vw" src="{% static '/images/was-versteht-man-unter-digital-business.jpg' %}" alt="Generic placeholder image">
         <div class="media-body">
           <h2 class="mt-0 font-weight-bold">Was versteht man unter Digital Business?</h2>
-          <p>Unter Digital Business versteht man die Entwicklung neuer Geschäftsmodelle sowie die Erschaffung neuer Wertschöpfungsketten indem die digitale und physische Welt ineinander verschmelzen. Die Technologie ist ein Instrument für neue innovative Kundennutzen bestehender Produkte und Dienstleistungen. Das Kerngeschäft eines Unternehmens gewinnt mit neuen Geschäftsmodellen einen entscheidenenden Mehrwert, welcher zu deutlichen Veränderungen auf dem Markt führen wird.</p>
+          <p>Unter Digital Business versteht man die Entwicklung neuer Geschäftsmodelle sowie die Erschaffung neuer Wertschöpfungsketten indem die digitale und physische Welt ineinander verschmelzen. Die Technologie ist ein Instrument für neue innovative Kundennutzen bestehender Produkte und Dienstleistungen. Das Kerngeschäft eines Unternehmens gewinnt mit neuen Geschäftsmodellen einen entscheidenenden Mehrwert, welcher zu deutlichen Veränderungen auf dem Markt führen wird. Ein Digital Business Manager (oder Digital Transformation Manager) entwickelt innovative digitale Geschäftsmodelle für sein Unternehmen und vermarktet die daraus entstandenen Produkte und Dienstleistungen. <a href="{% url 'index' %}#digitaltransformationmanager">Mehr erfahren</a>.
+          </p>
         </div>
       </div><!-- media end -->
       </div><!-- home1 end -->
       </div><!-- container end -->
-   
-    
-    <div class="contact flex" id="kontakt">
+<!-- Info section end -->
+
+
+  <div class="container-fluid contact-bg " id="kontakt">
+    <div class="contact flex">
       <div class="flex-item">
 
         <h3>Heute noch anmelden und Studienplatz sichern!</h3>
@@ -566,7 +614,7 @@
         </form> 
         </div><!--CONTACT FORM End-->    
     </div><!--Div contact End--> 
-
+  </div><!--Container Fluid End--> 
               
 
 		

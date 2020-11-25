@@ -271,6 +271,33 @@
 		padding: 2% !important;
 }
 
+
+/* ----------------------------------- Zulassung, Aufbau, Weitere Informationen */
+
+	.flexmodule-container {
+		display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	   	flex-wrap: wrap;
+	}
+
+	.flexmodule-item {
+		flex: 0 0 100%;
+		padding: 2% 2%;
+		margin: 0 0.25%;
+		border: 0.25px solid var(--grey);
+		-webkit-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+		-moz-box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+		box-shadow: -4px 9px 30px -5px rgba(35,65,92,0.54);
+		background-color: var(--blue);
+		color: white;
+
+	}
+
+	.card-body p {
+		padding: 0 !important;
+	}
+
 /* ----------------------------------- Call to Action */
 
 	.interesseflex {
@@ -287,6 +314,13 @@
 		background-color: var(--red);
 	    color: var(--white);
 }
+
+	#interesse p {
+		font-size: 2rem !important;
+		font-weight: 700 !important;
+}
+
+
 
 /* ----------------------------------- Hochschule */
 
