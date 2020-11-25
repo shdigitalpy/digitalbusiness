@@ -79,14 +79,14 @@
 
 /* ----------------------------------- Digital Business */
 
-	.home1 h2 {
-		padding: 2% 0;
+	.home1 h3 {
+		padding: 0;
 		width: 100% !important;
 }
 
 	.home1 p {
 		width: 100% !important;
-		padding: 2% 0 !important;
+		padding: 0 !important;
 	}
 
 	.home1-flex-item {
@@ -166,14 +166,14 @@
 	}
 
 /* ----------------------------------- Digital Business */
-	.home1 h2 {
-		padding: 2% 0;
+	.home1 h3 {
+		padding: 0;
 		width: 100% !important;
 }
 
 	.home1 p {
 		width: 100% !important;
-		padding: 2% 0 !important;
+		padding: 0 !important;
 	}
 
 
@@ -359,7 +359,7 @@
 		flex: 0 0 100%;
 	}
 
-	.home1 h2 {
+	.home1 h3 {
 		font-size: 1.8rem !important;
 		padding: 2% 2% 0 2%;
 		width: 100% !important;
