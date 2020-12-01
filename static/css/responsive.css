@@ -329,6 +329,34 @@
 		font-weight: 700 !important;
 }
 
+	
+/* ----------------------------------- Media */	
+	
+	.media {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 2% 0;
+	}
+
+	.media img {
+		width: 100vw !important;
+		margin: 2% 0;
+	}
+
+	.media h2 {
+		padding: 0;
+	}
+
+	.media .media-body p {
+		padding: 0 !important;
+	}
+
+/* ----------------------------------- Video Bottom */
+	.belowvideo {
+		width: 90%;
+		padding: 2%;
+}
+
 
 
 /* ----------------------------------- Hochschule */
@@ -381,15 +409,20 @@
 
 /* ----------------------------------- Kontaktformular */
 	.contact .flex-item {
-		flex: 0 0 90%;
-		margin: 3%;
+		flex: 0 0 100%;
+		margin: 2%;
+		padding: 7%;
+}
 
+	.contact h3 {
+		font-size: 1.1rem !important; 
 }
-	/* ----------------------------------- Video Bottom */
-	.belowvideo {
-		width: 90%;
-		padding: 2%;
+
+	.contact p {
+		font-size: 0.9rem !important;
+		color: var(--muted);
 }
+	
 
 /* ----------------------------------- Footer */
 	.footer-flex-item {
@@ -408,6 +441,6 @@
 
 /* ----------------------------------- Social Icons */
 	.social a {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 		margin: 0 4% 0 0;
 }
